@@ -1,0 +1,28 @@
+p {
+    color: rgba(133, 2, 255, 0.731);
+}
+
+div p {
+    color: rgb(0, 128, 85);
+}
+
+div p span {
+    color: rgb(196, 5, 5);
+}
+
+#mainTheme {
+    color: blueviolet;
+}
+
+.mainThemeJun01 {
+    color: rgb(10, 41, 5);
+    font: 1em arial;
+}
+
+body .mainThemeJun02 {
+    font-size: 20px;
+}
+
+body {
+    font: 1em arial;
+}
