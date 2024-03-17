@@ -1,0 +1,39 @@
+.header-main {
+    width: 100%;
+    height: 60px;
+    background-color: #923292;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;
+
+}
+.header-main div {
+    height: 30px;
+
+}
+
+.header-main .div-1 {
+    background-color: #824282;
+    order: 3;
+    flex-basis: 250px;
+    flex-shrink: -2;
+}
+.header-main .div-2 {
+    flex-basis: 100px;
+    flex-grow: 1;
+    background-color: #825982;
+    order: 11;
+
+}
+.header-main .div-3 {
+    flex-basis: 100px;
+    flex-grow: 1;
+    background-color: #000;
+    order:5;
+    align-self: flex-end;
+
+}
+
