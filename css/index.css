@@ -1,0 +1,57 @@
+main {
+    background-image: url(../img/cloyster.png), url(../img/nidoran-m.png);
+    background-size: 22vh, 25vh;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* column-gap: 5vh; */
+}
+main .main-intro h1 {
+    font-size: 96px;
+    line-height: 78px;
+}
+main p {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+main a {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 18px;
+    display: block;
+    background-color: var(--themeColor01);
+    padding: 10px 20px;
+    width: fit-content;
+}
+
+main .main-quote p {
+    border-left: 8px solid var(--themeColor01);
+    padding-left: 8px;
+    margin: 40px 0px;
+
+}
+
+main .main-quote p:nth-child(2) {
+    margin-left: 10px;
+
+}
+main .main-quote p:nth-child(3) {
+    margin-left: 20px;
+
+}
+
+
+main .main-intro {
+    position: relative;
+    right: 0vh;
+    padding-bottom: 8vh;
+
+}
+
+main .main-quote {
+    position: relative;
+    left: 2vh;
+}
