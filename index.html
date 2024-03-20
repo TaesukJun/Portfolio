@@ -33,7 +33,7 @@
 
     <main>
         <div class="main-intro">
-            <h1>
+            <h1 id ="turningText">
                 Welcome <br>to various <br>TJ Projects
             </h1>
             <p>
@@ -58,6 +58,38 @@
             </p>
         </div>
 
+        <script>
+            // var element = document.getElementById('turningText');
+            const fadingTime = 3000
+            
+            function fadeOut(el) {
+            var opacity = 1; // Initial opacity
+            var opacity2 = 0; // Fading in opacity
+            var interval = setInterval(function() {
+               if (opacity > 0) {
+                  opacity -= 50/fadingTime;
+                  //parametric function for fading away
+                  el.style.opacity = opacity * opacity / (2 * (opacity * opacity - opacity) + 1);
+               } else if (opacity2 < 1){
+                opacity2 += 50/fadingTime;
+                el.style.opacity = opacity2;
+               } else {
+                  clearInterval(interval); // Stop the interval when opacity reaches 0
+                  el.style.opacity = 1;
+                  // el.style.display = 'none'; // Hide the element
+               }
+            }, 50); 
+         }
+            fadeOut(document.getElementById('turningText'));
+
+
+            setTimeout(()=> {
+                document.getElementById("turningText").innerHTML = "Hello, hello, hello, I am here";
+                document.getElementById("turningText").style.fontSize = '120px';
+                document.getElementById("turningText").style.lineHeight = '100px';
+            }, fadingTime);
+
+        </script>
 
     </main>
 
