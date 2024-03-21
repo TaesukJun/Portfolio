@@ -1,8 +1,9 @@
 main {
-    background-image: url(../img/cloyster.png), url(../img/nidoran-m.png);
-    background-size: 22vh, 25vh;
+    background-image: url(../img/planet_v3.png), url(../img/mouse_composed_of_text_v2.png);
+    background-size: 38vh, 30vh;
     background-repeat: no-repeat, no-repeat;
     background-position: top, bottom;
+    opacity: 0.8;
     display: flex;
     justify-content: center;
     align-items: center;
