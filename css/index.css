@@ -29,6 +29,12 @@ main a {
     padding: 10px 20px;
     width: fit-content;
 }
+main a:hover {
+    filter: brightness(170%);
+    transition: all ease-in-out 0.5s;
+}
+
+
 
 main .main-quote p {
     border-left: 8px solid var(--themeColor01);
@@ -66,43 +72,167 @@ main .main-quote {
 
     width: 100%;
     padding: 60px 0px;
-    background-color: #fff;
+    background-color: var(--themeColor04);
     display: flex;
     justify-content: center;
     column-gap: 20px;
-
+    flex-wrap: wrap;
 
 }
+
+.index-category p {
+    color: #111;
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 38px;
+    text-align: center;
+    flex-basis: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    /* text-shadow: 3px 3px 2px #000; */
+
+}
+
 
 .index-category-box {
     width: 200px;
     height: 200px;
-    background-color: #fff;
+    background-color: var(--themeColor04);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    position: relative;
 }
 
-.index-category-box:nth-child(1) {
+.index-category-box:nth-child(2) {
     background-image: url(../img/cloyster.png);
 }
-.index-category-box:nth-child(2) {
-    background-image: url(../img/00000-87037012.png);
-}
 .index-category-box:nth-child(3) {
-    background-image: url(../img/creepynuts.png);
+    background-image: url(../img/Rattata.png);
+    background-size: 95%;
 }
 .index-category-box:nth-child(4) {
-    background-image: url(../img/00115-3721124697.png);
+    background-image: url(../img/creepynuts.png);
+    
+}
+.index-category-box:nth-child(5) {
+    background-image: url(../img/ekans.png);
+    background-size: 90%;
+}
+.dark-overlay {
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--themeColor03);
+    opacity: 0.25;
+    transition: all ease-in-out 300ms;
+
+}
+.index-category-box:hover {
+    filter:brightness(115%);
+    transition: all ease-in-out 1800ms;
+}
+
+.index-category-box:hover .dark-overlay{
+    opacity: 0.0;
 }
 
 
 
 .index-category-box h3 {
+    color: var(--themeColor03);
     font-size: 24px;
     line-height: 24px;
     text-align: center;
+    text-shadow: 3px 3px 2px #000;
+    z-index: 100;
 }
 
 
+/* ABOUT SECTION */
+
+
+.index-about {
+    width: 100%;
+    padding: 60px 0;
+    background-color: var(--themeColor05);
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    justify-content: center;
+}
+
+.index-about-img img {
+    width: 300px;
+    border-radius: 400px;
+
+}
+
+.index-about-text {
+    flex-basis: 455px;
+    
+
+}
+
+.index-about-text a {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 18px;
+    display: block;
+    background-color: var(--themeColor01);
+    padding: 10px 20px;
+    width: fit-content;
+
+}
+.index-about-text a:hover {
+    filter: brightness(170%);
+    transition: all ease-in-out 0.5s;
+}
+
+.index-about-skill {
+    flex-basis: 350px;
+
+
+
+}
+
+.index-about-skill-bar {
+    width: 100%;
+    height: 20px;
+    border: solid;
+
+}
+
+.index-about-skill-bar-fill {
+    width: 100%;
+    height: 100%;
+    background-color: var(--themeColor01);
+
+}
+
+.htmlcss {
+    width: 95%;
+}
+.py {
+    width: 85%;
+}
+.js {
+    width: 85%;
+}
+.go {
+    width: 65%;
+}
+.ju {
+    width: 60%;
+}
+.dc {
+    width: 75%;
+}
+.ap {
+    width: 55%;
+}
