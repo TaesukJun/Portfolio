@@ -27,37 +27,46 @@
             <a target="_blank" href="https://www.facebook.com"> <div class="header-main-rc-fg"></div> </a>
             <a target="_blank" href="https://www.youtube.com"><div class="header-main-rc-yt"></div></a>
             <a target="_blank" href="https://github.com/TaesukJun"><div class="header-main-rc-gh"></div></a>
+            
         </div>
     </header>
+
+        <!-- &&&&&&&&&&&&&&&&&&   -->
+        <!-- main section -->
+        <!-- &&&&&&&&&&&&&&&&&&   -->
 
 
     <main>
         <div class="main-intro">
-            <h1 id ="turningText">
+            <h1 id ="turningText01">
                 Welcome <br>to various <br>TJ Projects
-            </h1>
-            <p>
-                定期的に手を洗うことは、<br>
-                細菌や病気の感染を<br>
-                防ぐのに役立ちます。
+            </h1> 
+            <p id =>
+                The measurement is done while having surfactants,<br>
+                nanoparticles or other surface active compounds present at the interface.<br>
+                In dilatational interfacial rheology, the size of the interface is changing over time.
                 <a href="#">My work</a>
             </p>
         </div>
-        <div class="main-quote">
-            <p>
+        <div class="main-quote" >
+            <p id ="mainQuote01">
                 成功への唯一の階段は、一歩から始まる。<br>
                 - Sen no Rikyu <br>
             </p>
-            <p>
+            <p id ="mainQuote02">
                 失敗は成功のもと。<br>
                 - Fujiwara no Teika<br>
             </p>
-            <p>
+            <p id ="mainQuote03">
                 人生に成功とは、自分の条件で生きることです。<br>
                 - Shakyamuni Buddha
             </p>
         </div>
 
+
+        <!-- &&&&&&&&&&&&&&&&&&   -->
+        <!-- main script section -->
+        <!-- &&&&&&&&&&&&&&&&&&   -->
         <script>
             // var element = document.getElementById('turningText');
             const fadingTime = 3000
@@ -80,18 +89,38 @@
                }
             }, 50); 
          }
-            fadeOut(document.getElementById('turningText'));
-
+            fadeOut(document.getElementById('turningText01'));
+            fadeOut(document.getElementById('mainQuote01'));
+            fadeOut(document.getElementById('mainQuote02'));
+            fadeOut(document.getElementById('mainQuote03'));
 
             setTimeout(()=> {
-                document.getElementById("turningText").innerHTML = "Hello, hello, hello, I am here";
-                document.getElementById("turningText").style.fontSize = '120px';
-                document.getElementById("turningText").style.lineHeight = '100px';
+                document.getElementById("turningText01").innerHTML = "Hello, hello, hello, I am here";
+                document.getElementById("turningText01").style.fontSize = '120px';
+                document.getElementById("turningText01").style.lineHeight = '100px';
             }, fadingTime);
+
+            setTimeout(()=> {
+                document.getElementById('mainQuote01').innerHTML = "Of all the dispositions and habits which lead to political prosperity, religion and morality are indispensable supports.";
+                document.getElementById('mainQuote02').innerHTML = "Vincit qui se vincit";
+                document.getElementById('mainQuote03').innerHTML = "Más vale pájaro en mano, que ciento volando";
+            }, fadingTime);
+
 
         </script>
 
     </main>
+
+    <!-- &&&&&&&&&&&&&&&&&&   -->
+    <!-- category section -->
+    <!-- &&&&&&&&&&&&&&&&&&   -->
+
+    <section class ="index-category">
+        <div class ="index-category-box">
+            <h3>Web Development</h3>
+
+        </div>
+    </section>
 
 <!--
     <h1>TJ projects</h1>

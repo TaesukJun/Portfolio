@@ -1,13 +1,15 @@
 main {
+    width: 100%;
+    margin-top: 60px;
     background-image: url(../img/planet_v3.png), url(../img/mouse_composed_of_text_v2.png);
     background-size: 38vh, 30vh;
-    background-repeat: no-repeat, no-repeat;
+    background-repeat: no-repeat;
     background-position: top, bottom;
     opacity: 0.8;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* column-gap: 5vh; */
+    column-gap: 5vh;
 }
 main .main-intro h1 {
     font-size: 96px;
@@ -46,13 +48,61 @@ main .main-quote p:nth-child(3) {
 
 
 main .main-intro {
-    position: relative;
-    right: 0vh;
+
     padding-bottom: 8vh;
 
 }
 
 main .main-quote {
-    position: relative;
-    left: 2vh;
+
+    padding-bottom: 8vh;
 }
+
+
+/* CATEGORY SECTION */
+
+
+.index-category{
+
+    width: 100%;
+    padding: 60px 0px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+
+
+}
+
+.index-category-box {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+.index-category-box:nth-child(1) {
+    background-image: url(../img/cloyster.png);
+}
+.index-category-box:nth-child(2) {
+    background-image: url(../img/00000-87037012.png);
+}
+.index-category-box:nth-child(3) {
+    background-image: url(../img/creepynuts.png);
+}
+.index-category-box:nth-child(4) {
+    background-image: url(../img/00115-3721124697.png);
+}
+
+
+
+.index-category-box h3 {
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+
+
