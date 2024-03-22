@@ -147,7 +147,8 @@ a {
 }
 .header-main-nav ul li a:hover {
     color: var(--themeColor02-hover);
-    transition: all ease-out 0.5s;
+    filter: brightness(230%);
+    transition: all ease-out 1.5s;
 }
 
 
