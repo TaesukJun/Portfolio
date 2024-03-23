@@ -149,7 +149,7 @@ a:hover {
     margin: 0 1rem 0 1rem;
     font-weight: 1000;
     letter-spacing: -0.1rem;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     
 }
 .header-main-nav ul li{
@@ -180,7 +180,7 @@ a:hover {
     padding: 0 1rem 0 1rem;
     display: flex;
     align-items: center;
-    column-gap: 0px;
+    column-gap: 0rem;
 }
 
 .header-main-rc-fg {
@@ -276,14 +276,14 @@ a:hover {
 .footer-main-sitemap-first li {
     text-align: left;    
     flex-grow: -0.1rem;
-    margin-left: 0px;
+    margin-left: 0rem;
 
 }
 
 .footer-main-sitemap-second {
     flex-basis: 7%;
     text-transform: uppercase;
-    padding-left: 0px;
+    padding-left: 0rem;
     
 }
 
@@ -304,6 +304,66 @@ a:hover {
     color: var(--themeColor04);
 }
 
+.footer-main-sitemap a:hover {
+    filter: brightness(210%);
+    transition: all ease-in-out 0.2s;
+}
 
 
 
+
+
+/* For Mobile Version
+Typical Break Points:
+600px, 601px, 768px, 992px, 1200px
+*/
+
+
+@media only screen and (max-width: 600px) {
+    .wrapper-main{
+        width: 100%;
+
+        background-color: red;
+    }  
+    .header-main-nav {
+        display: none;
+    
+    }
+    .header-main-rc {
+        padding-right: 2rem;
+    }
+    
+    
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .wrapper-main{
+        width: 100%;
+        background-color: green;
+        
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992x) {
+    .wrapper-main{
+        width: 100%;
+        
+    }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1200x) {
+    .wrapper-main{
+        width: 100%;
+        
+    }
+
+}
+@media only screen and (min-width: 1200px) {
+    .wrapper-main{
+        width: 100%;
+        
+    }
+
+}

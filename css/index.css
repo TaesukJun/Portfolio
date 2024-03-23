@@ -9,7 +9,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 18vh;
+    column-gap: 5rem;
 }
 main .main-intro h1 {
     font-size: 9.0rem;
@@ -327,4 +327,92 @@ main .main-quote {
 .testimony-poke img:hover{
     filter: invert(1);
     transition: all ease-in-out 0.7s;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    main {
+        align-items: flex-end;
+    }
+    main .main-intro {
+        padding-bottom: 8vh;
+    }
+    main .main-intro h1 {
+        font-size: 8.0rem;
+        line-height: 7.4rem;
+        cursor: default;
+        text-align: center;
+    }
+    main p {
+        padding-top: 2.5rem;
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+        cursor: default;
+        text-align: center;
+    }
+    
+    main a {
+        margin-top: 1.5rem;
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        display: block;
+        background-color: var(--themeColor01);
+        padding: 1rem 2rem;
+        width: fit-content;
+    }
+    main a:hover {
+        filter: brightness(170%);
+        transition: all ease-in-out 0.5s;
+    }
+    
+    
+    
+
+    
+    main .main-intro {
+    
+        padding-bottom: 8vh;
+    
+    }
+
+
+    main .main-quote p {
+        display: none;
+
+    }
+    
+    
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .wrapper-main{
+        width: 100%;
+        background-color: green;
+        
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992x) {
+    .wrapper-main{
+        width: 100%;
+        
+    }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1200x) {
+    .wrapper-main{
+        width: 100%;
+        
+    }
+
+}
+@media only screen and (min-width: 1200px) {
+    .wrapper-main{
+        width: 100%;
+        
+    }
+
 }
