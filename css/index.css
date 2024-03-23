@@ -1,6 +1,6 @@
 main {
     width: 100%;
-    margin-top: 60px;
+    margin-top: 6.0rem;
     background-image: url(../img/planet_v3.png), url(../img/mouse_composed_of_text_v2.png);
     background-size: 38vh, 30vh;
     background-repeat: no-repeat;
@@ -9,26 +9,26 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 5vh;
+    column-gap: 18vh;
 }
 main .main-intro h1 {
-    font-size: 96px;
-    line-height: 78px;
+    font-size: 9.0rem;
+    line-height: 7.4rem;
     cursor: default;
 }
 main p {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
     cursor: default;
 }
 
 main a {
-    margin-top: 15px;
-    font-size: 18px;
-    line-height: 18px;
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
     display: block;
     background-color: var(--themeColor01);
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     width: fit-content;
 }
 main a:hover {
@@ -39,18 +39,18 @@ main a:hover {
 
 
 main .main-quote p {
-    border-left: 8px solid var(--themeColor01);
-    padding-left: 8px;
-    margin: 40px 0px;
+    border-left: 0.8rem solid var(--themeColor01);
+    padding-left: 0.8rem;
+    margin: 4.0rem 0rem;
     cursor: default;
 }
 
 main .main-quote p:nth-child(2) {
-    margin-left: 10px;
+    margin-left: 1rem;
 
 }
 main .main-quote p:nth-child(3) {
-    margin-left: 20px;
+    margin-left: 2rem;
 
 }
 
@@ -73,12 +73,12 @@ main .main-quote {
 .index-category{
 
     width: 100%;
-    padding: 60px 0px;
+    padding: 4.0rem 0rem;
     background-color: var(--themeColor04);
     display: flex;
     justify-content: center;
-    column-gap: 20px;
-    row-gap: 20px;
+    column-gap: 2rem;
+    row-gap: 2rem;
     flex-wrap: wrap;
     cursor: default;
 
@@ -87,8 +87,8 @@ main .main-quote {
 .index-category p {
     color: #111;
     text-align: center;
-    padding-bottom: 40px;
-    font-size: 38px;
+    padding-bottom: 4rem;
+    font-size: 3.8rem;
     text-align: center;
     flex-basis: 100%;
     text-transform: uppercase;
@@ -99,8 +99,8 @@ main .main-quote {
 
 
 .index-category-box {
-    width: 200px;
-    height: 200px;
+    width: 20rem;
+    height: 20rem;
     background-color: var(--themeColor04);
     background-repeat: no-repeat;
     background-size: cover;
@@ -150,10 +150,10 @@ main .main-quote {
 
 .index-category-box h3 {
     color: var(--themeColor03);
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
     text-align: center;
-    text-shadow: 3px 3px 2px #000;
+    text-shadow: 0.3rem 0.3rem 0.2rem #000;
     z-index: 100;
     
 }
@@ -163,16 +163,14 @@ main .main-quote {
 
 
 
-
-
 .index-about {
     width: 100%;
-    padding: 60px 0;
+    padding: 4.0rem 0rem;
     background-color: var(--themeColor05);
     display: flex;
     align-items: center;
-    column-gap: 15px;
-    row-gap: 15px;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
     justify-content: center;
 
 }
@@ -181,54 +179,56 @@ main .main-quote {
 
 
 .index-about-img img {
-    width: 250px;
-    border-radius: 400px;
+    width: 25rem;
+    border-radius: 40rem;
 
 }
 
 .index-about-text {
-    flex-basis: 455px;
+    flex-basis: 45.0rem;
     cursor: default;
 
 }
 .index-about-text h2 {
-    line-height: 22px;
+    line-height: 2.2rem;
 
 }
 
 
 
 .index-about-text a {
-    margin-top: 10px;
-    font-size: 18px;
-    line-height: 20px;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    line-height: 2.0rem;
     display: block;
     background-color: var(--themeColor01);
-    padding: 10px 20px;
+    padding: 1.0rem 2.0rem;
     width: fit-content;
 
 }
 .index-about-text a:hover {
-    filter: brightness(170%);
+    filter: brightness(150%);
+    filter: contrast(250%);
+    filter: saturate(-50%);
     transition: all ease-in-out 0.5s;
 }
 
 .index-about-skill {
-    flex-basis: 350px;
+    flex-basis: 35.0rem;
 
 }
 
 
 .index-about-skill p {
-    font-size: 16px;
-    padding-top: 4px;
+    font-size: 1.6rem;
+    padding-top: 0.4rem;
     cursor: default;
     transition: all ease-in-out 1s
 
 }
 
 .index-about-skill p:hover {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 600;
     transition: all ease-in-out 0.5s
 
@@ -236,7 +236,7 @@ main .main-quote {
 
 .index-about-skill-bar {
     width: 100%;
-    height: 20px;
+    height: 2rem;
     border: solid;
     
 }
@@ -277,15 +277,22 @@ main .main-quote {
     width: 55%;
 }
 
+/* TESTIMONY SECTION */
 
 .testimony {
-    margin-top: 40px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 3rem 0rem;
+    display: flex;
+    align-items: center;
 
 }
+
 .testimony-flex {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
 }
 .testimony-poke {
     flex-basis: 20%;
@@ -294,10 +301,10 @@ main .main-quote {
 }
 .testimony-poke p {
     text-align: center;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     cursor: default;
     font-weight: 600;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.05rem;
     transition: all ease-in-out 0.7s;
 }
 
@@ -310,10 +317,11 @@ main .main-quote {
 
 .testimony-poke img{
     width: 80%;
-    border-radius: 100px;
+    border-radius: 10rem;
     background-color: var(--themeColor04);
-    margin-left: 20px;
+    margin-left: 2rem;
     transition: all ease-in-out 0.7s;
+    justify-self: center;
 }
 
 .testimony-poke img:hover{

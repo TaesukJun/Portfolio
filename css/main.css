@@ -6,6 +6,7 @@
     --themeColor03:#d493e5;
     --themeColor04:#edc6f7;
     --themeColor05:rgb(247, 224, 249);
+    font-size: 62.5%; /*10px*/
 
 
 
@@ -22,6 +23,7 @@ body {
     background-repeat: repeat;
     background-position: center;
     z-index: 100;
+    width: 100%
 }
 
 body:after {
@@ -31,31 +33,27 @@ body:after {
     overflow: hidden;
     z-index: -1;
     content: url(../img/ekans.png);
-
+ 
 }
 
-.wrapper-main{
-    width: 1000px;
-    margin: 0 auto;
-}
 
 h1 {
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 2.6rem;
+    line-height: 3.0rem;
     font-weight: 600;
     
 }
 
 h2 {
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 1.8rem;
+    line-height: 2.0rem;
     font-weight: 400;
     
 }
 
 h3 {
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 2.6rem;
+    line-height: 3.0rem;
     font-weight: 600;
     
 }
@@ -63,8 +61,8 @@ h3 {
 
 
 p {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
     
 }
 p:hover {
@@ -75,18 +73,23 @@ p:hover {
 main {
 
     width: 100%;
-    height: calc(100vh-60px);
-    margin-top: 60px;
+    height: calc(100vh-6rem);
+    margin-top: 6rem;
 
 }
 
+.wrapper-main{
+    width: 105rem;
+    margin: 0rem auto;
+
+}
 
 
 a {
     cursor: pointer;
     color: var(--themeColor02);
     font-weight: 1000;
-    letter-spacing: -1px;
+    letter-spacing: -0.1rem;
     transition: all ease-in-out 0.75s;
 }
 
@@ -102,7 +105,7 @@ a:hover {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 60px;
+    height: 6.0rem;
     background-color: var(--themeColor01);
     display: flex;
     justify-content: space-between;
@@ -116,14 +119,14 @@ a:hover {
 .header-main-logo {
     width: fit-content;
     height: 100%;
-    padding: 0 10px 0 10px;
+    padding: 0 1.0rem 0 1.0rem;
     display: flex;
 
 }
 
 
 .header-main-logo img{
-    height: 60px;
+    height: 6.0rem;
     align-self: center;
     transition: all ease-in-out 0.75s;
 }
@@ -135,7 +138,7 @@ a:hover {
 
 .header-main-nav {
     width: fit-content;
-    min-width:410px;
+    min-width: 41rem;
     height: 100%;
     text-align: center;
 
@@ -143,9 +146,10 @@ a:hover {
 
 .header-main-nav ul {
     list-style: none;
-    margin: 0 10px 0 10px;
+    margin: 0 1rem 0 1rem;
     font-weight: 1000;
-    letter-spacing: -1px;
+    letter-spacing: -0.1rem;
+    font-size: 1.4rem;
     
 }
 .header-main-nav ul li{
@@ -155,8 +159,8 @@ a:hover {
     
 }
 .header-main-nav ul li a{
-    padding: 0 10px 0 10px;
-    line-height: 60px;
+    padding: 0 1rem 0 1rem;
+    line-height: 6rem;
     display: block;
     height: 100%;
     transition: all ease-in-out 0.75s;
@@ -173,15 +177,15 @@ a:hover {
 .header-main-rc {
     width: fit-content;
     height: 100%;
-    padding: 0 10px 0 10px;
+    padding: 0 1rem 0 1rem;
     display: flex;
     align-items: center;
     column-gap: 0px;
 }
 
 .header-main-rc-fg {
-    width: 50px;
-    height: 50px;
+    width: 5rem;
+    height: 5rem;
     background-image: url(../img/facebook-logo-black-v2.png);
     background-repeat: repeat;
     background-size: cover;
@@ -193,8 +197,8 @@ a:hover {
 }
 
 .header-main-rc-yt {
-    width: 50px;
-    height: 38px;
+    width: 5rem;
+    height: 3.8rem;
 
     background-image: url(../img/youtube-logo-black.png);
     background-repeat: no-repeat;
@@ -206,8 +210,8 @@ a:hover {
     transition: all ease-in-out 0.5s;
 }
 .header-main-rc-gh {
-    width: 50px;
-    height: 42px;
+    width: 5rem;
+    height: 4.2rem;
     background-image: url(../img/github-logo.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -225,14 +229,14 @@ a:hover {
 .main-p {
     color: var(--themeColor01);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 1000;
     font-style: italic;
     text-align: center;
     text-decoration: underline;
     text-transform: uppercase;
-    line-height: 30px;
-    word-spacing: 20px;
+    line-height: 3rem;
+    word-spacing: 2rem;
 }
 
 /* FOOTER */
@@ -240,7 +244,7 @@ a:hover {
 .footer-main {
     
     width: 100%;
-    padding: 12px 12px 12px 12px;
+    padding: 1.2rem 1.2rem 1.2rem 1.2rem;
     background-color: #000000;
     color: var(--themeColor03);
     z-index: 2999;
@@ -253,8 +257,8 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     
-    padding-left: 20px;
-    line-height: 20px;
+    padding-left: 1rem;
+    line-height: 2rem;
     
     
 }
@@ -262,16 +266,16 @@ a:hover {
 
 .footer-main-sitemap-first {
     flex-basis: 10%;
-    border-left: 4px solid #712dbe;
-    padding-left: 4px;
-    padding-right: 0px;
-    margin-right: 0px;
+    border-left: 0.4rem solid #712dbe;
+    padding-left: 0.2rem;
+    padding-right: 0rem;
+    margin-right: 0rem;
     
 
 }
 .footer-main-sitemap-first li {
     text-align: left;    
-    flex-grow: -1px;
+    flex-grow: -0.1rem;
     margin-left: 0px;
 
 }
@@ -285,7 +289,7 @@ a:hover {
 
 .footer-main-sitemap-copyright {
     flex-basis: 55%;
-    flex-grow: 1px;
+    flex-grow: 0.1rem;
 }
 
 .footer-main-sitemap ul {
@@ -295,7 +299,7 @@ a:hover {
 
 
 .footer-main-sitemap a {
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 600;
     color: var(--themeColor04);
 }
