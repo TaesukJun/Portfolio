@@ -24,19 +24,6 @@ main p {
     text-shadow: 0.2rem 0.2rem 0.2rem black;
 }
 
-main a {
-    margin-top: 1.5rem;
-    font-size: 1.8rem;
-    line-height: 1.8rem;
-    display: block;
-    background-color: var(--themeColor01);
-    padding: 1rem 2rem;
-    width: fit-content;
-}
-main a:hover {
-    filter: brightness(170%);
-    transition: all ease-in-out 0.5s;
-}
 
 
 
@@ -58,16 +45,61 @@ main .main-quote p:nth-child(3) {
 
 
 main .main-intro {
-
-    padding-bottom: 8vh;
-
+    padding-bottom: 2vh;
+    transition: all ease-in-out 1s;
 }
+
+
+main .main-intro h1:hover{
+    filter: invert(1);
+    transition: all ease-in-out 1s; 
+}
+
+
+
+main .main-intro p {
+    padding-top: 1.5rem;
+}
+
+
+main .main-intro p:hover {
+    filter: invert(130%);
+    transition: all ease-in-out 1s;
+    font-weight: 600;
+}
+
+
+main a {
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    display: block;
+    background-color: var(--themeColor01);
+    padding: 1rem 2rem;
+    width: fit-content;
+}
+
+main a:hover {
+    filter: brightness(130%);
+    color: green;
+    background-color: white;
+    transition: all ease-in-out 0.5s;
+}
+
+
+
 
 main .main-quote {
 
     padding-bottom: 8vh;
+    transition: all ease-in-out 1.5s;
 }
 
+main .main-quote:hover {
+
+    filter: brightness(160%);
+    transition: all ease-in-out 1s;
+}
 
 /* CATEGORY SECTION */
 
