@@ -7,13 +7,35 @@
     <link rel="stylesheet" href="css/reset.css">    
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
+
 </head>
 
 <body>
 
+
+    <!-- &&&&&&&&&&&&&&&&&&   -->
+    <!-- Burger menu section -->
+    <!-- &&&&&&&&&&&&&&&&&&   -->
+    <nav class="burger-menu">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">ABOUT ME</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+
+    </nav>
+
+
+    <!-- &&&&&&&&&&&&&&&&&&   -->
+    <!-- header section -->
+    <!-- &&&&&&&&&&&&&&&&&&   -->
+
+
+
     <header class="header-main">
         <div class="header-main-logo">
-            <img src="img/ditto.png" alt="substitution image for logo">
+            <img src="img/icon/ditto.png" alt="substitution image for logo">
             <nav class="header-main-nav">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
@@ -28,7 +50,7 @@
             <a target="_blank" href="https://www.facebook.com"> <div class="header-main-rc-fg"></div> </a>
             <a target="_blank" href="https://www.youtube.com"><div class="header-main-rc-yt"></div></a>
             <a target="_blank" href="https://github.com/TaesukJun"><div class="header-main-rc-gh"></div></a>
-            
+            <div class="burger-menu-btn"></div>
         </div>
     </header>
 
@@ -38,6 +60,8 @@
 
 
     <main>
+
+
         <div class="main-intro">
             <h1 id ="turningText01">
                 Welcome <br>to various <br>TJ Projects
@@ -97,8 +121,8 @@
 
             setTimeout(()=> {
                 document.getElementById("turningText01").innerHTML = "Hello, <pre>hello, <pre></pre>hello, <pre></pre>I am here";
-                document.getElementById("turningText01").style.fontSize = '10rem';
-                document.getElementById("turningText01").style.lineHeight = '9rem';
+                document.getElementById("turningText01").style.fontSize = '9rem';
+                document.getElementById("turningText01").style.lineHeight = '8.5rem';
             }, fadingTime);
 
             setTimeout(()=> {
@@ -159,6 +183,7 @@
 
 
         <div class="index-about-skill">
+            <ul>My skills</ul>
             <p>HTML & CSS</p>
             <div class="index-about-skill-bar">
                 <div class="index-about-skill-bar-fill htmlcss"></div>
@@ -276,6 +301,8 @@
 
         </div>
     </footer>
+
+    <script src="js/main.js"> </script>
 
 </body>
 

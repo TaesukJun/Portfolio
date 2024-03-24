@@ -20,6 +20,8 @@ main p {
     font-size: 1.8rem;
     line-height: 2.1rem;
     cursor: default;
+    color: var(--themeColor04);
+    text-shadow: 0.2rem 0.2rem 0.2rem black;
 }
 
 main a {
@@ -74,6 +76,7 @@ main .main-quote {
 
     width: 100%;
     padding: 4.0rem 0rem;
+    padding-bottom: 4rem;
     background-color: var(--themeColor04);
     display: flex;
     justify-content: center;
@@ -87,7 +90,7 @@ main .main-quote {
 .index-category p {
     color: #111;
     text-align: center;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     font-size: 3.8rem;
     text-align: center;
     flex-basis: 100%;
@@ -176,8 +179,6 @@ main .main-quote {
 }
 
 
-
-
 .index-about-img img {
     width: 25rem;
     border-radius: 40rem;
@@ -190,15 +191,16 @@ main .main-quote {
 
 }
 .index-about-text h2 {
+    text-align: center;
     line-height: 2.2rem;
-
 }
 
 
-
 .index-about-text a {
+    text-align: center;
     margin-top: 1rem;
     font-size: 1.8rem;
+    margin: 1rem auto;
     line-height: 2.0rem;
     display: block;
     background-color: var(--themeColor01);
@@ -216,6 +218,12 @@ main .main-quote {
 .index-about-skill {
     flex-basis: 35.0rem;
 
+}
+.index-about-skill ul {
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 0.3rem solid var(--themeColor01);
+    
 }
 
 
@@ -336,6 +344,8 @@ main .main-quote {
         align-items: flex-end;
     }
     main .main-intro {
+        margin: 3rem auto;
+        margin-left: 4.5rem;
         padding-bottom: 8vh;
     }
     main .main-intro h1 {
@@ -353,43 +363,86 @@ main .main-quote {
     }
     
     main a {
-        margin-top: 1.5rem;
-        font-size: 1.8rem;
-        line-height: 1.8rem;
-        display: block;
-        background-color: var(--themeColor01);
-        padding: 1rem 2rem;
-        width: fit-content;
+        margin: 2rem auto;
+        text-shadow: none;
     }
     main a:hover {
         filter: brightness(170%);
         transition: all ease-in-out 0.5s;
     }
     
-    
-    
-
-    
-    main .main-intro {
-    
-        padding-bottom: 8vh;
-    
-    }
-
-
     main .main-quote p {
         display: none;
 
     }
+
+    /*About section*/
+    .index-about {
+        flex-wrap: wrap;
+        row-gap: 2.5rem;
+    }
+
+    .index-about-img {
+        width: 60%;
+        
+    }
+
+    .index-about-img img {
+        width: 100%;
+        height: 28rem;
+        border-radius: 40rem;
+        
+    }
+    
+    .index-about-text {
+        flex-basis: 100%;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        cursor: default;
+    
+    }
+    .index-about-text h2 {
+        line-height: 2.2rem;
+    
+    }
     
     
+    
+    .index-about-text a {
+        margin-top: 2rem;
+        font-size: 1.8rem;
+        line-height: 2.0rem;
+        display: block;
+        background-color: var(--themeColor01);
+        padding: 1.0rem 2.0rem;
+        width: fit-content;
+    
+    }
+    .index-about-text a:hover {
+        filter: brightness(150%);
+        filter: contrast(250%);
+        filter: saturate(-50%);
+        transition: all ease-in-out 0.5s;
+    }
+    
+    .index-about-skill {
+        flex-basis: 40.0rem;
+    
+    }
+
+    .testimony {
+        display: none;
+    
+    }
+    
+    
+
 
 }
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
     .wrapper-main{
         width: 100%;
-        background-color: green;
         
     }
 
