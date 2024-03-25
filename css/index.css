@@ -371,6 +371,14 @@ main .main-quote:hover {
 
 
 
+
+/* For Mobile Version
+Typical Break Points:
+600px, 601px, 768px, 992px, 1200px
+*/
+
+
+
 @media only screen and (max-width: 600px) {
     main {
         align-items: flex-end;
@@ -459,7 +467,7 @@ main .main-quote:hover {
     
     .index-about-skill {
         flex-basis: 40.0rem;
-    
+        cursor: default;
     }
 
     .testimony {
@@ -473,31 +481,19 @@ main .main-quote:hover {
 }
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
-    .wrapper-main{
-        width: 100%;
-        
-    }
+
 
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992x) {
-    .wrapper-main{
-        width: 100%;
-        
-    }
+
 
 }
 @media only screen and (min-width: 992px) and (max-width: 1200x) {
-    .wrapper-main{
-        width: 100%;
-        
-    }
+
 
 }
 @media only screen and (min-width: 1200px) {
-    .wrapper-main{
-        width: 100%;
-        
-    }
+
 
 }
