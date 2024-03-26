@@ -1,0 +1,62 @@
+.gallery{
+    font-size: 3rem;
+    width: 100%;
+
+}
+
+
+.gallery-image{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    row-gap: 2rem;
+    flex-direction: center;
+    align-items: center;
+}
+.gallery-image img{
+    width: 28vh;
+    margin: 0.5rem 0.5rem;
+    
+
+}
+
+
+
+
+.gallery-table table{
+    width: 100%;
+    margin: 2rem 0rem 2rem 0rem;
+    border: 0.4rem solid #000;
+    border-style: dotted;
+}
+
+.gallery-table table,th,td{
+    border-collapse: separate;
+    border-radius: 1rem;
+    padding: 0.3rem;
+    border-spacing: 0.1rem;
+}
+
+.gallery-table table tr td:nth-child(4){
+    width: 30rem
+}
+
+
+
+.gallery th{
+    font-weight: bold;
+    border: 0.2rem solid var(--themeColor02);
+    
+}
+.gallery td{
+    border: 0.2rem solid var(--themeColor01);
+    
+}
+
+
+.gallery-table table tr:nth-child(even){
+    background-color: var(--themeColor04);
+}
+

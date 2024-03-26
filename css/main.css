@@ -7,7 +7,7 @@
     --themeColor04:#edc6f7;
     --themeColor05:rgb(247, 224, 249);
     font-size: 62.5%; /*10px*/
-
+    cursor: default;
 
 
 
@@ -523,15 +523,35 @@ Typical Break Points:
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
 
+    .wrapper-main{
+        width: 58rem;
 
+    }  
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992x) {
+    .wrapper-main{
+        width: 75em;
+
+    }  
+
 
 }
 @media only screen and (min-width: 992px) and (max-width: 1200x) {
+    .wrapper-main{
+        width: 95em;
+
+    }  
+
+
+
 
 }
 @media only screen and (min-width: 1200px) {
+    .wrapper-main{
+        width: 90em;
+
+    }  
+
 
 }

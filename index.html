@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TJ projects</title>
+    <link rel="icon" href="img/icon/cake-favicon-02.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">    
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
@@ -20,7 +21,7 @@
         <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="aboutMe#">ABOUT ME</a></li>
+            <li><a href="aboutMe.html">ABOUT ME</a></li>
             <li><a href="mailto:tjun@purdue.edu">CONTACT</a></li>
             
         </ul>
@@ -40,10 +41,10 @@
             <nav class="header-main-nav">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="gallery.html">GALLERY</a></li>
-                    <li><a href="aboutMe#">ABOUT ME</a></li>
-                    <li><a href="mailto:tjun@purdue.edu">CONTACT</a></li>
-
+                    <li><a class="header-gallery" href="gallery.html">GALLERY</a></li>
+                    <li><a class="header-aboutMe" href="aboutMe.html">ABOUT ME</a></li>
+                    <li><a class="header-contact" href="mailto:tjun@purdue.edu">CONTACT</a></li>
+          
                 </ul>
             </nav>
         </div>
@@ -66,13 +67,13 @@
 
         <div class="main-intro">
             <h1 id ="turningText01">
-                Welcome <br>to various <br>TJ Projects
+                Welcome, <br>welcome again<br>to various <br>TJ Projects
             </h1> 
             <p>
                 The measurement is done while having surfactants,<br>
                 other surface active compounds present at the interface.<br>
                 In dilatational interfacial rheology, <br>the size of the interface is changing over time.
-                <a href="aboutMe#">My work</a>
+                <a class="main-intro-aboutMe" href="aboutMe.html">My work</a>
             </p>
         </div>
         <div class="main-quote" >
@@ -96,7 +97,7 @@
         <!-- &&&&&&&&&&&&&&&&&&   -->
         <script>
             // var element = document.getElementById('turningText');
-            const fadingTime = 3000
+            const fadingTime = 6000
             
             function fadeOut(el) {
                     
@@ -181,7 +182,7 @@
             Her tapestries of light became the bridge between reality and fantasy, <br>
             reminding all of the power of imagination.
         </h2>
-        <a href="aboutMe#"> More about stories</a>
+        <a href="aboutMe.html"> More about stories</a>
         </div>
 
 
@@ -311,15 +312,15 @@
         <div class="footer-main-sitemap">
             <ul class="footer-main-sitemap-first">
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="gallery.html">GALLERY</a></li>
-                <li><a href="aboutMe#">ABOUT ME</a></li>
-                <li><a href="mailto:tjun@purdue.edu">CONTACT</a></li>
+                <li><a class="footer-main-sitemap-01-gallery" href="gallery.html">GALLERY</a></li>
+                <li><a class="footer-main-sitemap-01-aboutMe" href="aboutMe.html">ABOUT ME</a></li>
+                <li><a class="footer-main-sitemap-01-contact" href="mailto:tjun@purdue.edu">CONTACT</a></li>
             </ul>
             <ul class="footer-main-sitemap-second">
-                <li><a href="WebDevelopment#">Web Development</a></li>
-                <li><a href="https://github.com/TaesukJun/DCM_Viewer">DCM Viewer</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="graphicDesign#">Graphic Design</a></li>
+                <li><a class="footer-main-sitemap-02-WD" href="WebDevelopment#">Web Development</a></li>
+                <li><a target="_blank" class="footer-main-sitemap-02-DV" href="https://github.com/TaesukJun/DCM_Viewer">DCM Viewer</a></li>
+                <li><a class="footer-main-sitemap-02-gallery" href="gallery.html">Gallery</a></li>
+                <li><a class="footer-main-sitemap-02-GD" href="graphicDesign#">Graphic Design</a></li>
             </ul>
             <ul class="footer-main-sitemap-copyright">
                 <li><p id = "copyrightText"> Copyright© 2024 Jun </p>
@@ -340,10 +341,11 @@
             </ul>
 
 
-        </div>
+
     </footer>
 
     <script src="js/main.js"> </script>
+    <script src="js/link.js"> </script>
 
 </body>
 
