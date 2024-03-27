@@ -15,23 +15,23 @@
 
 }
 
-.aboutMe-content-table {
-    text-align: center;
-    justify-self: center;
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 2rem;
-
-
-    
-
-}
 
 .aboutMe-content-table, th, td{
     border: 0.3rem solid black;
     border-collapse: separate;
     border-radius: 1rem;
 }
+
+.aboutMe-content-table {
+    text-align: center;
+    justify-self: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    border-style: dotted;
+
+}
+
 
 .aboutMe-content-table th{
     padding: 0.5rem;
