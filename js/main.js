@@ -82,3 +82,9 @@ disclaimerCloseBox.onclick = function() {
     isDisclaimerOpen = false;
 
 }
+
+
+/**
+ * Javascript to make scroll speed difference
+ */
+

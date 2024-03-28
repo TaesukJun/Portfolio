@@ -9,6 +9,7 @@
     font-size: 62.5%; /*10px*/
     cursor: default;
 
+    
 
 
 }
@@ -23,7 +24,7 @@ body {
     background-repeat: repeat;
     background-position: center;
     z-index: 100;
-    width: 100%
+    width: 100%;
 }
 
 body:after {

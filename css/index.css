@@ -1,3 +1,11 @@
+body{
+    
+    background-image: url(../img/planet_v3.png);
+
+
+}
+
+
 main {
     width: 100%;
     margin-top: 6.0rem;
@@ -10,6 +18,7 @@ main {
     justify-content: center;
     align-items: center;
     column-gap: 5rem;
+    
 }
 main .main-intro h1 {
     font-size: 9.0rem;
@@ -497,3 +506,4 @@ Typical Break Points:
 
 
 }
+
