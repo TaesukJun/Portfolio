@@ -12,7 +12,7 @@
     font-size: 2rem;
     width: 100%;
     display: flex;
-
+    
 }
 
 
@@ -20,26 +20,34 @@
     border: 0.3rem solid black;
     border-collapse: separate;
     border-radius: 1rem;
+    
 }
 
 .aboutMe-content-table {
+    
     text-align: center;
+    vertical-align: middle;
     justify-self: center;
     width: 80%;
     margin: 0 auto;
     margin-bottom: 2rem;
     border-style: dotted;
-
+    
+    
 }
 
 
 .aboutMe-content-table th{
     padding: 0.5rem;
+    vertical-align: middle;
+    
 }
 
 
 .aboutMe-content-table td{
     padding: 1rem;
+    text-align: center;
+    vertical-align: center;
 }
 
 .aboutMe-content-table tr:nth-child(even){
@@ -47,3 +55,12 @@
 }
 
 
+
+.aboutMe-content a img{
+    background-size: 50%;
+    height: 20rem;
+}
+
+.aboutMe-content a:hover{
+    filter: brightness(120%);
+}

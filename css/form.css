@@ -1,0 +1,82 @@
+body{
+    font-size: 2rem;
+}
+
+.form-main {
+    width: 50rem;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.form-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 0.5rem solid var(--themeColor01);
+    /* box-shadow: 0.5rem 0.5rem 1rem var(--themeColor04); */
+    margin-bottom: 2rem;
+
+}
+
+
+
+
+textarea {
+    width: 100%;
+    height: 11rem;
+    resize: horizontal;
+}
+textarea, input {
+    border: 0.1rem black solid;
+    background-color: var(--themeColor04);
+    outline: 0.2rem violet solid;
+}
+
+textarea:focus, input:focus {
+    border: 0.2rem black solid;
+
+}
+
+input {
+    cursor: text;
+}
+
+input[type="radio"] {
+    appearance: radio;
+    cursor: default;
+}
+
+input[type="checkbox"] {
+    appearance: checkbox;
+    cursor: default;
+}
+
+select {
+    border: 0.1rem black solid;
+    background-color: var(--themeColor04);
+    outline: 0.2rem violet solid;
+    width: 15rem;
+    border-radius: 1rem;
+}
+
+button {
+    background-color: var(--themeColor04);
+    width: 8rem;
+    height: 3rem;
+    text-align: center;
+    border-radius: 1rem;
+    transition: all ease-in-out 0.7s;
+}
+
+button:hover {
+    filter: brightness(125%);
+    transition: all ease-in-out 0.7s;
+}
+
+
+input[type="text"], textarea, select, button{
+    padding: 0.5rem;
+}

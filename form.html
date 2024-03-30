@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TJ projects</title>
     <link rel="icon" href="img/icon/cake-favicon-02.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/reset.css">    
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/project01.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form.css">
 
 </head>
 
@@ -24,9 +24,9 @@
         </div>
     
         <ul>
-            <li><a href="../index.html">HOME</a></li>
-            <li><a class="burger-gallery" href="../gallery.html">GALLERY</a></li>
-            <li><a class="burger-aboutMe" href="../../aboutMe.html">ABOUT ME</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a class="burger-gallery" href="gallery.html">GALLERY</a></li>
+            <li><a class="burger-aboutMe" href="aboutMe.html">ABOUT ME</a></li>
             <li><a class="burger-contact" href="mailto:tjun@purdue.edu">CONTACT</a></li>
             
         </ul>
@@ -40,12 +40,12 @@
 
     <header class="header-main">
         <div class="header-main-logo">
-            <img src="../img/icon/ditto.png" alt="substitution image for logo">
+            <img src="img/icon/ditto.png" alt="substitution image for logo">
             <nav class="header-main-nav">
                 <ul>
-                    <li><a href="../index.html">HOME</a></li>
-                    <li><a class="header-gallery" href="../gallery.html">GALLERY</a></li>
-                    <li><a class="header-aboutMe" href="../aboutMe.html">ABOUT ME</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a class="header-gallery" href="gallery.html">GALLERY</a></li>
+                    <li><a class="header-aboutMe" href="aboutMe.html">ABOUT ME</a></li>
                     <li><a class="header-contact" href="mailto:tjun@purdue.edu">CONTACT</a></li>
           
                 </ul>
@@ -65,44 +65,62 @@
     </div>
 
     <!-- &&&&&&&&&&&&&&&&&&   -->
-    <!-- XXX section -->
+    <!-- form section -->
     <!-- &&&&&&&&&&&&&&&&&&   -->
 
-    <div class = "Project1-ColorFlipper">
 
-        <div class = "Project1-ColorFlipper-menu">
-            <div class = "Project1-ColorFlipper-menu-1">
-                <a id = "invert"> Color Invert </a>
+    <section class = "form-main">
+        <div class="form-title">Forms</div>
+        <form action="formExample.html" method = "post">
+            <label for ="email">E-mail</label><br>
+            <input required type="email" name="email" id="email" placeholder="E-mail">
+            <br><br>
 
-            </div>
-            <div class = "Project1-ColorFlipper-menu-2">
-                <div >
-                    <a id = "toggleSimple" class = "Project1-ColorFlipper-menu-2-simple"> Simple </a>
-                </div>
-                <div >
-                    <a id = "toggleHex" class = "Project1-ColorFlipper-menu-2-hex"> Hex </a>
-                </div>
-            </div>
-        </div>
-        <div class = "Project1-ColorFlipper-container">
-            Background Color:
-            <span class = "Project1-ColorFlipper-container-color">
-                #d493e5
-            </span>
-
-        </div>
-        <div class = "Project1-ColorFlipper-section">
-            <a id = "btn" class = "Project1-ColorFlipper-section-click">
-
-                click to Randomize
-
-            </a>
-        </div>
+            <label for ="pwd">Password</label><br>
+            <input required type="password" name="pwd" id="pwd" placeholder="Password">
+            <br><br>
 
 
-    </div>
+            <label for ="firstName">First Name</label><br>
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" value="default">
+            <br><br>
+            <label for ="message">Notes </label><br>
+            <textarea required name="message" id="message" style="width: 90%" placeholder="Write messages..."></textarea>
+            <br><br>
+            <label>Pick your favorite color</label><br>
+            <input type="radio" id="colorBlue" name="color" value="blue">
+            <label for ="color">Blue </label><br>
+            <input type="radio" id="colorBrown" name="color" value="brown">
+            <label for ="color">Brown </label><br>
+            <input type="radio" id="colorGreen" name="color" value="green">
+            <label for ="color">Green </label><br>
+
+            <br>
+            <label>Pick your favorite animal</label><br>
+            <input type="checkbox" id="animalCat" name="animal" value="cat">
+            <label for ="color">Cat </label><br>
+            <input type="checkbox" id="animalDog" name="animal" value="dog">
+            <label for ="color">Dog </label><br>
+            <input type="checkbox" id="animalBird" name="color" value="bird">
+            <label for ="color">Bird </label><br>
+            
+            <br><br>
+            <label>Pick your favorite car</label><br>
+            <select name="carType" id="carType">
+                <option value="none">None</option>
+                <option value="ford">Ford</option>
+                <option value="mustang">Mustang</option>
+                <option value="toyota">Toyota</option>
+                <option value="hyundai">Hyundai</option>
+            </select>
+            <br><br>
+            <button type="submit" value="submit">Submit</button>
+
+        </form>
 
 
+
+    </section>
 
 
     <!-- &&&&&&&&&&&&&&&&&&   -->
@@ -147,15 +165,15 @@
     
         <div class="footer-main-sitemap">
             <ul class="footer-main-sitemap-first">
-                <li><a href="../index.html">HOME</a></li>
-                <li><a class="footer-main-sitemap-01-gallery" href="../gallery.html">GALLERY</a></li>
-                <li><a class="footer-main-sitemap-01-aboutMe" href="../aboutMe.html">ABOUT ME</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a class="footer-main-sitemap-01-gallery" href="gallery.html">GALLERY</a></li>
+                <li><a class="footer-main-sitemap-01-aboutMe" href="aboutMe.html">ABOUT ME</a></li>
                 <li><a class="footer-main-sitemap-01-contact" href="mailto:tjun@purdue.edu">CONTACT</a></li>
             </ul>
             <ul class="footer-main-sitemap-second">
                 <li><a class="footer-main-sitemap-02-WD" href="WebDevelopment#">Web Development</a></li>
                 <li><a target="_blank" class="footer-main-sitemap-02-DV" href="https://github.com/TaesukJun/DCM_Viewer">DCM Viewer</a></li>
-                <li><a class="footer-main-sitemap-02-gallery" href="../gallery.html">Gallery</a></li>
+                <li><a class="footer-main-sitemap-02-gallery" href="gallery.html">Gallery</a></li>
                 <li><a class="footer-main-sitemap-02-GD" href="graphicDesign#">Graphic Design</a></li>
             </ul>
             <ul class="footer-main-sitemap-copyright">
@@ -171,7 +189,7 @@
             <ul>
                 <li><a class="privacy-btn">Privacy</a></li>
                 <li><a class="disclaimer-btn">Disclaimer</a></li>
-                <li><a href="googlePlay#"> <img src="../img/googleplay.png" alt="googleplay"> </a></li>
+                <li><a href="googlePlay#"> <img src="img/googleplay.png" alt="googleplay"> </a></li>
                
 
             </ul>
@@ -180,8 +198,8 @@
         </div>
     </footer>
 
-    <script src="../js/main.js"> </script>
-    <script src="../js/project01.js"> </script>
+    <script src="js/main.js"> </script>
+    <script src="js/link.js"> </script>
 
 </body>
 
