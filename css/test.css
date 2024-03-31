@@ -1,0 +1,76 @@
+
+.footer-main-privacy {
+    display: none;
+    border-bottom: 0.3rem solid var(--themeColor01);
+    margin-bottom: 1rem;
+}
+
+
+.footer-main-privacy-head {
+    display: flex;
+    font-size: 1.8rem;
+    justify-content: space-between;
+    
+    font-weight: 600;
+    height: 3rem;
+    vertical-align: middle;
+    
+    
+}
+
+.footer-main-privacy-head-closeBtn {
+    flex-basis: 3.0rem;
+    background-image: url(../img/icon/cancel.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    flex-grow: -1;
+    cursor: pointer;
+}
+
+.footer-main-privacy-content{
+    text-align: justify;
+    padding-bottom: 0.5rem;
+    
+}
+
+.privacy-btn {
+}
+
+
+
+.footer-main-disclaimer {
+    display: none;
+    border-bottom: 0.3rem solid var(--themeColor01);
+    margin-bottom: 1rem;
+}
+
+
+
+.footer-main-disclaimer-head {
+    display: flex;
+    font-size: 1.8rem;
+    justify-content: space-between;
+    font-weight: 600;
+    height: 3rem;
+    vertical-align: middle;
+    
+}
+
+
+.footer-main-disclaimer-head-closeBtn {
+    flex-basis: 3.0rem;
+    background-image: url(../img/icon/cancel.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    flex-grow: -1;
+    cursor: pointer;
+}
+
+.footer-main-disclaimer-content{
+    text-align: justify;
+    padding-bottom: 0.5rem;
+}
+
+.disclaimer-btn {
+    font-size: 1rem;
+}
