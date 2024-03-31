@@ -8,7 +8,7 @@
     --themeColor05:rgb(247, 224, 249);
     font-size: 62.5%; /*10px*/
     cursor: default;
-
+    --menu-count: 4;
     
 
 
@@ -120,8 +120,11 @@ a:hover {
 .header-main-logo {
     width: fit-content;
     height: 100%;
-    padding: 0 1.0rem 0 1.0rem;
+    padding: 0 0.5rem 0 1rem;
     display: flex;
+    align-self: center;
+    margin-right: -4.5rem;
+    
 
 }
 
@@ -130,6 +133,8 @@ a:hover {
     height: 6.0rem;
     align-self: center;
     transition: all ease-in-out 0.75s;
+    margin-right: -0.5rem;
+    width: 5.5rem;
 }
 .header-main-logo img:hover {
     filter:brightness(145%);
@@ -151,16 +156,17 @@ a:hover {
     font-weight: 1000;
     letter-spacing: -0.1rem;
     font-size: 1.5rem;
+    align-self: center;
     
 }
 .header-main-nav ul li{
     display: inline;
     float: left;
-    /* margin-right: 10px; */
+    position: relative;
     
 }
 .header-main-nav ul li a{
-    padding: 0 1rem 0 1rem;
+    padding: 0 0.5rem 0 0.5rem;
     line-height: 6rem;
     display: block;
     height: 100%;
@@ -173,24 +179,135 @@ a:hover {
     transition: all ease-out 0.7s;
 }
 
+/***********************/
+/* Dropdown styling */
 
+
+.header-main-nav ul li {
+
+}
+
+
+.header-main-nav ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    position: absolute;
+    left: -2.1rem;
+    transition: all ease-in-out 0.5s;
+    background-color: var(--themeColor04);
+
+
+
+
+}
+
+
+
+.header-main-nav ul li ul li a{
+    white-space: nowrap;
+    height: 5rem;
+    width: 10rem;
+    align-self: center;
+    vertical-align: middle;
+    justify-self: center;
+    border-bottom: 0.3rem solid var(--themeColor01);
+    font-size: 1.4rem;
+    line-height: auto;
+}
+
+
+ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transition: all ease-in-out 0.5s;
+
+}
+
+
+/* Dropdown styling End*/
+/************************/
+
+
+
+/* here I changed */
 
 .header-main-rc {
     width: fit-content;
     height: 100%;
-    padding: 0 1rem 0 1rem;
+    padding: 0 0.7rem 0 0.7rem;
     display: flex;
     align-items: center;
     column-gap: 0rem;
 }
 
+.header-main-rc form {
+    display: flex;
+    width: calc(20vw + 1rem);
+    margin-left: calc(20vw - 20rem);
+    margin-right: calc(20vw - 9.5rem);
+    margin-right: -3.5rem;
+    align-self: center;
+    height: 3rem;
+}
+
+
+.header-main-rc form input {
+    cursor: text;
+    width: 4rem;
+    width: calc(20vw - 5rem);
+}
+
+.header-main-rc form input:focus {
+    border: 0.2rem black solid;
+    outline: 0.4rem violet solid;
+}
+
+.header-main-rc button {
+    width: fit-content;
+    height: 3rem;
+}
+
+.header-main-rc button img {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    filter: contrast(-10%);
+    filter: brightness(20%);
+}
+
+.header-main-rc button img:hover {
+    filter: brightness(120%);
+    transition: all ease-in-out 0.5s;
+}
+
+
+
+textarea, input {
+    border: 0.1rem black solid;
+    background-color: var(--themeColor04);
+    outline: 0.2rem violet solid;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    padding: 0.2rem;
+
+}
+
+
+
+
+
+
+
 .header-main-rc-fg {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     background-image: url(../img/facebook-logo-black-v2.png);
     background-repeat: repeat;
     background-size: cover;
     transition: all ease-in-out 0.75s;
+    margin-left: 0rem;
 }
 .header-main-rc-fg:hover {
     filter: invert(1);
@@ -198,8 +315,8 @@ a:hover {
 }
 
 .header-main-rc-yt {
-    width: 5rem;
-    height: 3.8rem;
+    width: 4rem;
+    height: 2.9rem;
 
     background-image: url(../img/youtube-logo-black.png);
     background-repeat: no-repeat;
@@ -211,8 +328,8 @@ a:hover {
     transition: all ease-in-out 0.5s;
 }
 .header-main-rc-gh {
-    width: 5rem;
-    height: 4.2rem;
+    width: 4rem;
+    height: 3.4rem;
     background-image: url(../img/github-logo.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -465,6 +582,29 @@ Typical Break Points:
     .header-main-rc {
         padding-right: 1rem;
     }
+    
+    .header-main-logo {
+        width: 12rem;
+
+    
+    }
+
+    .header-main-rc form {
+        display: flex;
+        width: 20rem;
+        margin-left: 2rem;
+        margin-right: -3.5rem;
+        align-self: center;
+        height: 3rem;
+    }
+    
+    
+    .header-main-rc form input {
+        cursor: text;
+        width: 14rem;
+    }
+    
+
     
 
     .footer-main-sitemap {

@@ -260,7 +260,7 @@ main .main-quote:hover {
     flex-basis: 35.0rem;
 
 }
-.index-about-skill ul {
+.index-about-skill-title {
     font-size: 2rem;
     font-weight: 600;
     border-bottom: 0.3rem solid var(--themeColor01);

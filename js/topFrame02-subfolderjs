@@ -11,9 +11,9 @@ document.write(`
         </div>
 
         <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a class="burger-gallery" href="gallery.html">GALLERY</a></li>
-            <li><a class="burger-aboutMe" href="aboutMe.html">ABOUT ME</a></li>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a class="burger-gallery" href="../gallery.html">GALLERY</a></li>
+            <li><a class="burger-aboutMe" href="../aboutMe.html">ABOUT ME</a></li>
             <li><a class="burger-contact" href="mailto:tjun@purdue.edu">CONTACT</a></li>
             
         </ul>
@@ -27,12 +27,12 @@ document.write(`
 
     <header class="header-main">
         <div class="header-main-logo">
-            <img src="img/icon/ditto.png" alt="substitution image for logo">
+            <img src="../img/icon/ditto.png" alt="substitution image for logo">
             <nav class="header-main-nav">
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a class="header-gallery" href="gallery.html">GALLERY</a></li>
-                    <li><a class="header-aboutMe" href="aboutMe.html">ABOUT ME</a></li>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a class="header-gallery" href="../gallery.html">GALLERY</a></li>
+                    <li><a class="header-aboutMe" href="../aboutMe.html">ABOUT ME</a></li>
                     <li><a class="header-contact" href="mailto:tjun@purdue.edu">CONTACT</a></li>
         
                 </ul>
