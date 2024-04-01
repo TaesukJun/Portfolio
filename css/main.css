@@ -541,7 +541,7 @@ Typical Break Points:
 
     .burger-menu ul{
         width: 100%;
-        height: calc(100vh - 6rem);
+        height: calc(100vh - 60rem);
         display: flex;
         flex-wrap: wrap;
         align-content: flex-start;
@@ -551,9 +551,26 @@ Typical Break Points:
     .burger-menu ul li{
         flex-basis: 100%;
         border-bottom: 0.2rem solid #000;
-
+        transition: all ease-in-out 0.7s;
+        
 
     }
+    .burger-menu ul div{
+        display: block;
+        font-size: 2rem;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .burger-menu ul div div{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 0.2rem solid var(--themeColor01);
+        background-color: var(--themeColor04);
+    }
+    
+
 
     .burger-menu ul li:last-child{
         border-bottom: 0.2rem solid #000;
@@ -565,11 +582,14 @@ Typical Break Points:
         display: block;
         height: 100%;
         font-size: 3rem;
-        padding: 30px 0;
+        padding: 2rem 0;
         flex-basis: 100%;
         text-align: center;
 
     }
+
+
+
 
     .wrapper-main{
         width: 100%;

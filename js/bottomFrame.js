@@ -1,7 +1,4 @@
 document.write(`
-    <!-- &&&&&&&&&&&&&&&&&&   -->
-    <!-- footer section -->
-    <!-- &&&&&&&&&&&&&&&&&&   -->
 
 
     <footer class="footer-main">
@@ -38,7 +35,7 @@ document.write(`
         </div>
 
 
-    
+
         <div class="footer-main-sitemap">
             <ul class="footer-main-sitemap-first">
                 <li><a href="index.html">HOME</a></li>
@@ -61,14 +58,13 @@ document.write(`
                 <li><a class="privacy-btn">Privacy</a></li>
                 <li><a class="disclaimer-btn">Disclaimer</a></li>
                 <li><a href="googlePlay#"> <img src="img/googleplay.png" alt="googleplay"> </a></li>
-               
+            
 
             </ul>
 
 
         </div>
     </footer>
-    <script src="js/main.js"> </script>
-    <script src="js/link.js"> </script>
 
 `);
+
