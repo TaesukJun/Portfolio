@@ -14,10 +14,31 @@
 
 }
 
+/* 
+:root{
+    --themeColor01:#c1a231;
+    --themeColor01-hover:#5f4a0c;
+    --themeColor02:#000000;
+    --themeColor02-hover:#bea82d;
+    --themeColor03:#e5d693;
+    --themeColor04:#f7f0c6;
+    --themeColor05:rgb(249, 246, 224);
+    font-size: 62.5%;
+    cursor: default;
+    --menu-count: 4;
+    
+
+
+};
+
+*/
+
+
+
 
 body {
 
-    background-color: #a970c34d;
+    background-color: var(--themeColor03);  
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     background-color: var(--themeColor03);
@@ -374,8 +395,8 @@ textarea, input {
 /*.footer-main-sitemap ul:nth-child() */
 
 .footer-main-sitemap-first {
-    flex-basis: 10%;
-    border-left: 0.4rem solid #712dbe;
+    flex-basis: 10%; 
+    border-left: 0.4rem solid var(--themeColor01);
     padding-left: 0.2rem;
     padding-right: 0rem;
     margin-right: 0rem;
@@ -640,7 +661,7 @@ Typical Break Points:
     
     .footer-main-sitemap-first {
         flex-basis: 15%;
-        border-left: 0.4rem solid #712dbe;
+        border-left: 0.4rem solid var(--themeColor01);
         padding-left: 0.3rem;
         padding-right: 0rem;
         margin-right: 0rem;

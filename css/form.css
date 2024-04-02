@@ -31,8 +31,8 @@ textarea {
 }
 textarea, input {
     border: 0.1rem black solid;
-    background-color: var(--themeColor04);
-    outline: 0.2rem violet solid;
+    background-color: var(--themeColor05);
+    outline: 0.2rem var(--themeColor04) solid;
 }
 
 textarea:focus, input:focus {
@@ -57,7 +57,7 @@ input[type="checkbox"] {
 select {
     border: 0.1rem black solid;
     background-color: var(--themeColor04);
-    outline: 0.2rem violet solid;
+    outline: 0.2rem var(--themeColor05) solid;
     width: 15rem;
     border-radius: 1rem;
 }

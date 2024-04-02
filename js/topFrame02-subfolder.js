@@ -27,7 +27,7 @@ document.write(`
 
     <header class="header-main">
         <div class="header-main-logo">
-            <img src="../img/icon/ditto.png" alt="substitution image for logo">
+            <img id="main-logo-sub" src="../img/icon/ditto.png" alt="substitution image for logo">
             <nav class="header-main-nav">
                 <ul>
                     <li><a href="../index.html">HOME</a></li>
@@ -51,4 +51,4 @@ document.write(`
         <!-- header margin -->
     </div>
 
-    `);
+`);
