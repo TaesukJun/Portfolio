@@ -86,11 +86,12 @@ disclaimerCloseBox.onclick = function() {
 
 
 let logo = document.getElementById("main-logo");
+let isSub = document.getElementById('isSub').innerHTML;
 
-let logoClicked= false;
+let logoClicked= true; 
 
 logo.onclick = function() {
-    if (!logoClicked) {
+    if (!logoClicked) {  
     document.documentElement.style.setProperty('--themeColor01', '#c1a231');
     document.documentElement.style.setProperty('--themeColor01-hover', '#5f4a0c');
     document.documentElement.style.setProperty('--themeColor02-hover', '#bea82d');
@@ -98,9 +99,17 @@ logo.onclick = function() {
     document.documentElement.style.setProperty('--themeColor04', '#f7f0c6');
     document.documentElement.style.setProperty('--themeColor05', 'rgb(249, 246, 224)');
     logoClicked= true;
+    if (isSub=="sub") {
+        console.log(logo.src)
+        logo.src="../img/pikachu.png";
+
+    } else {
+        logo.src="img/pikachu.png";
+    }
+    
 
     } else if (logoClicked) {
-
+    console.log(logo.src) 
     document.documentElement.style.setProperty('--themeColor01', '#a231c1');
     document.documentElement.style.setProperty('--themeColor01-hover', '#5f0c5f');
     document.documentElement.style.setProperty('--themeColor02-hover', '#712dbe');
@@ -108,10 +117,109 @@ logo.onclick = function() {
     document.documentElement.style.setProperty('--themeColor04', '#edc6f7');
     document.documentElement.style.setProperty('--themeColor05', 'rgb(247, 224, 249)');
     logoClicked= false;
+    logo.src="img/icon/ditto.png";
+    if (isSub=="sub") {
+        logo.src="../img/icon/ditto.png";
+    } else {
+        logo.src="img/icon/ditto.png";
+    }
 
     }
 
 };
+
+
+// let logoSub = document.getElementById("main-logo4");
+
+// let logoSubClicked= false;
+
+// logoSub.onclick = function() {
+//     if (!logoSubClicked) {
+//     document.documentElement.style.setProperty('--themeColor01', '#c1a231');
+//     document.documentElement.style.setProperty('--themeColor01-hover', '#5f4a0c');
+//     document.documentElement.style.setProperty('--themeColor02-hover', '#bea82d');
+//     document.documentElement.style.setProperty('--themeColor03', '#e5d693');
+//     document.documentElement.style.setProperty('--themeColor04', '#f7f0c6');
+//     document.documentElement.style.setProperty('--themeColor05', 'rgb(249, 246, 224)');
+//     logoSubClicked= true;
+//     //logoSub.src="../img/pikachu.png";
+
+//     } else if (logoSubClicked) {
+
+//     document.documentElement.style.setProperty('--themeColor01', '#a231c1');
+//     document.documentElement.style.setProperty('--themeColor01-hover', '#5f0c5f');
+//     document.documentElement.style.setProperty('--themeColor02-hover', '#712dbe');
+//     document.documentElement.style.setProperty('--themeColor03', '#d493e5');
+//     document.documentElement.style.setProperty('--themeColor04', '#edc6f7');
+//     document.documentElement.style.setProperty('--themeColor05', 'rgb(247, 224, 249)');
+//     logoSubClicked= false;
+//     //logoSub.src="../img/ditto.png";
+//     }
+
+// };
+
+
+
+// Get the button element
+const galleryBurger = document.getElementById('galleryBurger');
+const galleryBurgerSub = document.getElementById('galleryBurgerSub');
+
+// Add a mouseover event listener
+galleryBurger.addEventListener('mouseover', () => {
+  // Change the button's background color
+  galleryBurger.style.backgroundColor = 'var(--themeColor03)';
+  galleryBurgerSub.style.opacity = 1;
+  galleryBurgerSub.style.display ='block';
+  galleryBurgerSub.style.visibility ='visible';
+  galleryBurgerSub.style.height ='20rem';
+  galleryBurgerSub.style.transition ="all 1s";
+  
+});
+
+
+
+// Add a mouseout event listener
+galleryBurger.addEventListener('mouseout', () => {
+    // Change the button's background color back to its original color
+    // galleryBurger.style.backgroundColor = 'green';
+    // setTimeout(()=> {
+    //     galleryBurgerSub.style.opacity = 0;
+    //     galleryBurgerSub.style.display ='none';
+    //     galleryBurgerSub.style.visibility ='hidden';
+    //     galleryBurgerSub.style.height ='0rem';
+    //     galleryBurgerSub.style.transition ='all 1s ease-in-out';
+    // }, 1000);
+    galleryBurgerSub.style.opacity = 0;
+    galleryBurgerSub.style.display ='none';
+    galleryBurgerSub.style.visibility ='hidden';
+    galleryBurgerSub.style.height ='0rem';
+    galleryBurgerSub.style.transition ="all 1s";
+
+});
+
+  galleryBurgerSub.addEventListener('mouseover', () => {
+    // Change the button's background color
+    galleryBurger.style.backgroundColor = 'var(--themeColor01)';
+    galleryBurgerSub.style.opacity = 1;
+    galleryBurgerSub.style.display ='block';
+    galleryBurgerSub.style.visibility ='visible';
+    galleryBurgerSub.style.height ='20rem';
+    galleryBurgerSub.style.transition ="all 1s";
+    
+  });
+
+  galleryBurgerSub.addEventListener('mouseout', () => {
+    // Change the button's background color
+    galleryBurger.style.backgroundColor = 'var(--themeColor03)'
+    galleryBurgerSub.style.opacity = 0;
+    galleryBurgerSub.style.display ='none';
+    galleryBurgerSub.style.visibility ='hidden';
+    galleryBurgerSub.style.height ='0rem';
+    galleryBurgerSub.style.transition ="all 1s";
+
+    
+  });
+
 
 
 

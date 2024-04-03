@@ -1,11 +1,11 @@
 :root{
-    --themeColor01:#a231c1;
-    --themeColor01-hover:#5f0c5f;
+    --themeColor01:#c1a231;
+    --themeColor01-hover:#5f4a0c;
     --themeColor02:#000000;
-    --themeColor02-hover:#712dbe;
-    --themeColor03:#d493e5;
-    --themeColor04:#edc6f7;
-    --themeColor05:rgb(247, 224, 249);
+    --themeColor02-hover:#bea82d;
+    --themeColor03:#e5d693;
+    --themeColor04:#f7f0c6;
+    --themeColor05:rgb(249, 246, 224);
     font-size: 62.5%; /*10px*/
     cursor: default;
     --menu-count: 4;
@@ -13,6 +13,29 @@
 
 
 }
+
+/*
+:root{
+    --themeColor01:#a231c1;
+    --themeColor01-hover:#5f0c5f;
+    --themeColor02:#000000;
+    --themeColor02-hover:#712dbe;
+    --themeColor03:#d493e5;
+    --themeColor04:#edc6f7;
+    --themeColor05:rgb(247, 224, 249);
+    font-size: 62.5%;
+    cursor: default;
+    --menu-count: 4;
+    
+
+
+}
+
+*/
+
+
+
+
 
 /* 
 :root{
@@ -31,8 +54,8 @@
 
 };
 
-*/
 
+*/
 
 
 
@@ -282,7 +305,7 @@ ul li:hover ul{
 
 .header-main-rc form input:focus {
     border: 0.2rem black solid;
-    outline: 0.4rem violet solid;
+    outline: 0.4rem var(--themeColor01-hover) solid;
 }
 
 .header-main-rc button {
@@ -308,7 +331,7 @@ ul li:hover ul{
 textarea, input {
     border: 0.1rem black solid;
     background-color: var(--themeColor04);
-    outline: 0.2rem violet solid;
+    outline: 0.2rem var(--themeColor03) solid;
     border-radius: 1rem;
     font-size: 1.2rem;
     padding: 0.2rem;
@@ -366,7 +389,9 @@ textarea, input {
     height: 6rem;
 }
 
-
+.isSub {
+    display: none;
+}
 
 
 /* FOOTER */
@@ -584,13 +609,17 @@ Typical Break Points:
         width: 100%;
         margin: 0 auto;
     }
+
+
+
     .burger-menu ul div div{
         padding-top: 1rem;
         padding-bottom: 1rem;
         border-bottom: 0.2rem solid var(--themeColor01);
         background-color: var(--themeColor04);
+        display: block;
     }
-    
+
 
 
     .burger-menu ul li:last-child{
@@ -608,8 +637,24 @@ Typical Break Points:
         text-align: center;
 
     }
-
-
+    /*
+    .burger-gallery-02{
+        display: none;
+    }
+    .burger-gallery-01{
+        display: none;
+    }
+    .burger-menu ul:hover .burger-gallery-01{
+        display: block;
+    }
+    */
+    .burger-gallery-sub {
+        opacity: 0;
+        display: none;
+        visibility: hidden;
+        height: 0;
+        transition: 1s all ease-in-out;
+    }
 
 
     .wrapper-main{

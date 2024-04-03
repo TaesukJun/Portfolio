@@ -27,7 +27,7 @@ document.write(`
 
     <header class="header-main">
         <div class="header-main-logo">
-            <img id="main-logo-sub" src="../img/icon/ditto.png" alt="substitution image for logo">
+            <img id="main-logo" src="../img/pikachu.png" alt="substitution image for logo">
             <nav class="header-main-nav">
                 <ul>
                     <li><a href="../index.html">HOME</a></li>
@@ -50,5 +50,6 @@ document.write(`
     <div class="header-margin">
         <!-- header margin -->
     </div>
+    <div id = "isSub" class="isSub">sub</div>
 
 `);
