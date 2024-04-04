@@ -1,0 +1,94 @@
+
+.incr {
+    width: 80rem;
+    padding: 2rem;
+    font-weight: bold;
+    margin: 0 auto;
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.clickBtn {
+    border: 0.4rem solid var(--themeColor01);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: var(--themeColor05);
+    margin: 0.3rem;
+    cursor: pointer;
+    transition: all 0.7s ease-in-out;
+}
+
+.clickBtn:hover {
+    filter: contrast(1.8);
+    transition: all 0.7s ease-in-out;
+    
+}
+
+.point-info {
+    border-bottom: solid 0.4rem var(--themeColor01);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.progress{
+    border: 0.2rem solid;
+    height: 2rem;
+    border-radius: 1rem;
+}
+
+.progress-bar{
+    width: 50%;
+    filter: contrast(0.5);
+    height: 100%;
+    border-radius: 1rem;
+    background-color: var(--themeColor01);
+
+}
+
+.click-box {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    font-size: 2.5rem;
+
+}
+
+
+
+.inventory {
+    font-size: 3rem;
+    border-bottom: solid 0.4rem var(--themeColor01);
+    
+}
+
+.inventory div {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 500;
+
+}
+
+.description {
+    font-size: 1rem;
+
+}
+
+.clikc-box-title{
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+
+
+@media only screen and (max-width: 80rem) {
+
+    .incr {
+        width: 100%;
+    }
+
+}

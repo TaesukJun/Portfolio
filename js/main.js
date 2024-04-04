@@ -223,6 +223,61 @@ galleryBurger.addEventListener('mouseout', () => {
 
 
 
+let fadingTime = 300;
+
+function fadeOutAndIn(el) {
+                    
+    let opacity = 1; // Initial opacity
+    let opacity2 = 0; // Fading in opacity
+    let interval = setInterval(function() {
+    if (opacity > 0) {
+        opacity -= 50/fadingTime;
+        //parametric function for fading away
+        el.style.opacity = opacity * opacity / (2 * (opacity * opacity - opacity) + 1);
+    } else if (opacity2 < 1.01){
+        opacity2 += 50/fadingTime;
+        el.style.opacity = opacity2;
+    } else {
+        clearInterval(interval); // Stop the interval when opacity reaches 0
+        el.style.opacity = 1.1;
+        // el.style.display = 'none'; // Hide the element
+    }
+    }, 50); 
+}
+
+function fadeOut(el) {
+                    
+    let opacity = 1; // Initial opacity
+    let interval = setInterval(function() {
+    if (opacity > 0) {
+        // console.log(opacity);
+        opacity -= 50/fadingTime;
+        //parametric function for fading away
+        el.style.opacity = opacity;
+        // el.style.opacity = opacity * opacity / (2 * (opacity * opacity - opacity) + 1);
+    } else {
+        clearInterval(interval); // Stop the interval when opacity reaches 0
+        el.style.opacity = 0;
+        el.style.display = 'none'; // Hide the element
+    }
+    }, 50);
+}
+
+function fadeIn(el) {
+                    
+    let opacity = 0; // Initial opacity
+    let interval = setInterval(function() {
+    el.style.display = 'flex';
+    if (opacity < 1.01) {
+        opacity += 50/fadingTime;
+        el.style.opacity = opacity * opacity / (2 * (opacity * opacity - opacity) + 1);
+    } else {
+        clearInterval(interval); 
+        el.style.opacity = 1;
+        
+    }
+    }, 50);
+}
 
 
 
