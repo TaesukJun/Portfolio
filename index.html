@@ -17,13 +17,14 @@
     <!-- &&&&&&&&&&&&&&&&&&   -->
     <!-- Header section -->
     <!-- &&&&&&&&&&&&&&&&&&   -->
+
     <script src="js/topFrame02.js"></script>
 
 
 
-        <!-- &&&&&&&&&&&&&&&&&&   -->
-        <!-- main section -->
-        <!-- &&&&&&&&&&&&&&&&&&   -->
+    <!-- &&&&&&&&&&&&&&&&&&   -->
+    <!-- main section -->
+    <!-- &&&&&&&&&&&&&&&&&&   -->
 
 
     <main>
@@ -61,19 +62,19 @@
         <!-- &&&&&&&&&&&&&&&&&&   -->
         <script>
             // var element = document.getElementById('turningText');
-            const fadingTime = 6000
+            const fadingTimeIndex = 6000
             
-            function fadeOut(el) {
+            function fadeOutIndex(el) {
                     
                 var opacity = 1; // Initial opacity
                 var opacity2 = 0; // Fading in opacity
                 var interval = setInterval(function() {
                 if (opacity > 0) {
-                    opacity -= 50/fadingTime;
+                    opacity -= 50/fadingTimeIndex;
                     //parametric function for fading away
                     el.style.opacity = opacity * opacity / (2 * (opacity * opacity - opacity) + 1);
                 } else if (opacity2 < 1.01){
-                    opacity2 += 50/fadingTime;
+                    opacity2 += 50/fadingTimeIndex;
                     el.style.opacity = opacity2;
                 } else {
                     clearInterval(interval); // Stop the interval when opacity reaches 0
@@ -82,22 +83,22 @@
                 }
                 }, 50); 
             }
-            fadeOut(document.getElementById('turningText01'));
-            fadeOut(document.getElementById('mainQuote01'));
-            fadeOut(document.getElementById('mainQuote02'));
-            fadeOut(document.getElementById('mainQuote03'));
+            fadeOutIndex(document.getElementById('turningText01'));
+            fadeOutIndex(document.getElementById('mainQuote01'));
+            fadeOutIndex(document.getElementById('mainQuote02'));
+            fadeOutIndex(document.getElementById('mainQuote03'));
 
             setTimeout(()=> {
                 document.getElementById("turningText01").innerHTML = "Hello, <pre>hello, <pre></pre>hello, <pre></pre>I am here";
                 document.getElementById("turningText01").style.fontSize = '9rem';
                 document.getElementById("turningText01").style.lineHeight = '8.5rem';
-            }, fadingTime);
+            }, fadingTimeIndex);
 
             setTimeout(()=> {
                 document.getElementById('mainQuote01').innerHTML = "Of all the dispositions and habits which <pre>lead to political prosperity, <pre>religion and morality are indispensable supports.";
                 document.getElementById('mainQuote02').innerHTML = "Vincit qui se vincit";
                 document.getElementById('mainQuote03').innerHTML = "Más vale pájaro en mano, que ciento volando";
-            }, fadingTime);
+            }, fadingTimeIndex);
 
 
         </script>
@@ -110,7 +111,7 @@
 
     <section class ="index-category">
         <p>Categories</p>
-        <a href="WebDevelopment#" class ="index-category-box">
+        <a href="##" class ="index-category-box">
             <div class="dark-overlay"></div>
             <h3>Web Development</h3>
         </a>
@@ -122,7 +123,7 @@
             <div class="dark-overlay"></div>
             <h3>Gallery</h3>
         </a>
-        <a id="linkAboutMe" href="graphicDesign#" class ="index-category-box">
+        <a id="linkAboutMe" href="##" class ="index-category-box">
             <div class="dark-overlay"></div>
             <h3>Graphic Design</h3>
         </a>
@@ -192,9 +193,9 @@
 
     </section>
 
-        <!-- &&&&&&&&&&&&&&&&&&   -->
-        <!-- testimony section -->
-        <!-- &&&&&&&&&&&&&&&&&&   -->
+    <!-- &&&&&&&&&&&&&&&&&&   -->
+    <!-- testimony section -->
+    <!-- &&&&&&&&&&&&&&&&&&   -->
 
     <div class="testimony">
         <div class="wrapper-main testimony-flex">

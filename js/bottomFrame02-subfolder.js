@@ -49,10 +49,10 @@ document.write(`
                 <li><a class="footer-main-sitemap-01-contact" href="mailto:tjun@purdue.edu">CONTACT</a></li>
             </ul>
             <ul class="footer-main-sitemap-second">
-                <li><a class="footer-main-sitemap-02-WD" href="WebDevelopment#">Web Development</a></li>
+                <li><a class="footer-main-sitemap-02-WD" href="##">Web Development</a></li>
                 <li><a target="_blank" class="footer-main-sitemap-02-DV" href="https://github.com/TaesukJun/DCM_Viewer">DCM Viewer</a></li>
                 <li><a class="footer-main-sitemap-02-gallery" href="../gallery.html">Gallery</a></li>
-                <li><a class="footer-main-sitemap-02-GD" href="graphicDesign#">Graphic Design</a></li>
+                <li><a class="footer-main-sitemap-02-GD" href="##">Graphic Design</a></li>
             </ul>
             <ul class="footer-main-sitemap-copyright">
                 <li><p id = "copyrightText"> Copyright© 2024 Jun </p>
@@ -62,7 +62,7 @@ document.write(`
             <ul>
                 <li><a class="privacy-btn">Privacy</a></li>
                 <li><a class="disclaimer-btn">Disclaimer</a></li>
-                <li><a href="googlePlay#"> <img src="../img/googleplay.png" alt="googleplay"> </a></li>
+                <li><a href="https://play.google.com/"> <img src="../img/googleplay.png" alt="googleplay"> </a></li>
             
 
             </ul>
