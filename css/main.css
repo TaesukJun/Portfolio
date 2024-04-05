@@ -9,7 +9,7 @@
     font-size: 62.5%; /*10px*/
     cursor: default;
     --menu-count: 4;
-    
+    user-select: none;
 
 
 }
@@ -26,15 +26,12 @@
     font-size: 62.5%;
     cursor: default;
     --menu-count: 4;
-    
+    user-select: none;
 
 
 }
 
 */
-
-
-
 
 
 /* 
@@ -49,14 +46,13 @@
     font-size: 62.5%;
     cursor: default;
     --menu-count: 4;
-    
+    user-select: none;
 
 
 };
 
 
 */
-
 
 
 body {
