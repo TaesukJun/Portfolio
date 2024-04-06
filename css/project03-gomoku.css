@@ -1,0 +1,235 @@
+:root{
+    --boardSize: 38rem;
+    --gridSize: calc(var(--boardSize) / 19);
+    --subGridSize: calc(var(--gridSize) / 2);
+    --upperSection: 0rem;
+}
+
+
+
+.gameboard{
+    height: var(--boardSize);
+    width: var(--boardSize);
+    background-color: rgb(255, 155, 24);
+    margin: 6rem auto;
+    cursor: pointer
+}
+
+.black {
+    background-color: black;
+    border-radius: var(--subGridSize);
+}
+
+.gameboard-row{
+    height: var(--gridSize);
+    width: 38rem;
+    display: flex;
+    column-gap: -0.05rem;
+    
+
+}
+
+.line10 {
+    width: var(--gridSize);
+    height: var(--subGridSize);
+    column-gap: 0rem;
+    row-gap: 0rem;
+    display: flex;
+}
+.line11 {
+    width: var(--subGridSize);
+    height: var(--subGridSize);
+}
+.line12 {
+    width: var(--subGridSize);
+    height: var(--subGridSize);
+}
+.line20 {
+    width: var(--gridSize);
+    height: var(--subGridSize);
+    column-gap: 0rem;
+    row-gap: 0rem;
+    display: flex;
+}
+.line21 {
+    width: var(--subGridSize);
+    height: var(--subGridSize);
+}
+.line22 {
+    width: var(--subGridSize);
+    height: var(--subGridSize);
+    border-top: black solid 0.05rem;
+    border-left: black solid 0.05rem;
+}
+
+
+.line10 {
+    width: var(--gridSize);
+    height: var(--subGridSize);
+    column-gap: 0rem;
+    row-gap: 0rem;
+    display: flex;
+}
+.line11 {
+    width: var(--subGridSize);
+    height: var(--subGridSize);
+}
+.line12 {
+    width: var(--subGridSize);
+    height: var(--subGridSize);
+}
+.line13 {
+    width: var(--subGridSize);
+    height: var(--subGridSize);
+    border-left: black solid 0.05rem;
+}
+
+.line20 {
+    width: var(--gridSize);
+    height: var(--subGridSize);
+    column-gap: 0rem;
+    row-gap: 0rem;
+    display: flex;
+    z-index: 10010;
+}
+.line21 {
+    width: var(--subGridSize);
+    height: var(--subGridSize);
+    
+}
+.line22 {
+    width: var(--subGridSize);
+    height: var(--subGridSize);
+    border-top: black solid 0.05rem;
+    border-left: black solid 0.05rem;
+   
+}
+.line23 {
+    width: var(--subGridSize);
+    height: var(--subGridSize);
+    border-top: black solid 0.05rem;
+    
+}
+.line24 {
+    width: var(--subGridSize);
+    height: var(--subGridSize);
+    border-left: black solid 0.05rem;
+    
+
+}
+
+ul{
+    z-index: 2;
+}
+
+
+
+point5 {
+    position: absolute;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: black;
+    left: calc(50% - 0.3rem);
+    top: calc(var(--upperSection) + 12rem - 0.27rem + var(--boardSize)/2);
+    border-radius: 1rem;
+    z-index: 0
+}
+
+
+
+
+
+point3 {
+    position: absolute;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: black;
+    left: calc(50% - 0.3rem + var(--boardSize) / 19 * 6);
+    top: calc(var(--upperSection) + 12rem + 0.72rem + var(--boardSize)/19 * 3);
+    border-radius: 1rem;
+
+}
+point2 {
+    position: absolute;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: black;
+    left: calc(50% - 0.3rem);
+    top: calc(var(--upperSection) + 12rem + 0.72rem + var(--boardSize)/19 * 3);
+    border-radius: 1rem;
+
+}
+
+
+point1 {
+    position: absolute;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: black;
+    left: calc(50% - 0.21rem - var(--boardSize) / 19 * 6);
+    top: calc(var(--upperSection) + 12rem + 0.72rem + var(--boardSize)/19 * 3);
+    border-radius: 1rem;
+
+}
+
+
+
+
+
+
+
+point6 {
+    position: absolute;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: black;
+    left: calc(50% - 0.3rem + var(--boardSize) / 19 * 6);
+    top: calc(var(--upperSection) + 12rem - 0.27rem + var(--boardSize)/2);
+    border-radius: 1rem;
+
+}
+point4 {
+    position: absolute;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: black;
+    left: calc(50% - 0.21rem - var(--boardSize) / 19 * 6);
+    top: calc(var(--upperSection) + 12rem - 0.27rem + var(--boardSize)/2);
+    border-radius: 1rem;
+
+}
+
+
+point9 {
+    position: absolute;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: black;
+    left: calc(50% - 0.3rem + var(--boardSize) / 19 * 6);
+    top: calc(var(--upperSection) + 12rem - 1.25rem + var(--boardSize)/19 * 16);
+    border-radius: 1rem;
+
+}
+
+point8 {
+    position: absolute;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: black;
+    left: calc(50% - 0.3rem);
+    top: calc(var(--upperSection) + 12rem - 1.25rem + var(--boardSize)/19 * 16);
+    border-radius: 1rem;
+
+}
+
+
+point7 {
+    position: absolute;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: black;
+    left: calc(50% - 0.21rem - var(--boardSize) / 19 * 6);
+    top: calc(var(--upperSection) + 12rem - 1.25rem + var(--boardSize)/19 * 16);
+    border-radius: 1rem;
+
+}

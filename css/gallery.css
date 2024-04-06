@@ -53,14 +53,15 @@
 
 
 .gallery-table {
-    margin: 1rem;
-
+    width: 60rem;
+    margin: 0 auto;
+    font-size: 2rem;
 }
 
 
 .gallery-table table{
     width: 100%;
-    margin: 2rem 1rem 2rem 0rem;
+    margin: 6rem auto;
     border: 0.4rem solid #000;
     border-style: dotted;
 
