@@ -31,8 +31,9 @@
     <!-- &&&&&&&&&&&&&&&&&&   -->
 
 
-
-
+    <div  class="statusBoard"> <span id = "statusBoard">Gomoku Turn </span> <span id ='turnNum'>1</span> : 
+        <span class="statusBoard-colorturn">Black</span> </div>
+    <div class="second-line">   <button id="retry" class="retry">Retry</button> </div>
 
     <div class = "gameboard">
         <div class = "gameboard-row">
@@ -96,6 +97,16 @@
     </div>
 
     <script>
+        let winAudio = new Audio('../audio/nice.mp3');
+        
+        const colorTurn = document.querySelector('.statusBoard-colorturn');
+        const turnNum = document.getElementById('turnNum');
+        const statusBoard = document.getElementById('statusBoard');
+        let isWin = false;
+
+        
+        
+
         function check(state, gridSize, target) {
             n=0;
             let checkBoard = [];
@@ -110,17 +121,141 @@
                 }
                 
             }
-            checkBoard.forEach(element[0] => {
+            
+            for (let i = 0; i < checkBoard.length; i++) {
+                let count = 0;
+                let countMax = 0;
+                let check = checkBoard[i];
                 
-            });
-            for i incheckBoard
-            return console.log(checkBoard)
+
+                for (let k = 1; k < 19; k++) {
+                     
+                    if (checkBoard.some((element) => (element[0]== check[0] + k)&&element[1]==check[1])) {
+                        count += 1;
+                        console.log(checkBoard);
+                        console.log(`k-countMax ${k}`);
+                        countMax = Math.max(count,countMax);
+                        console.log(`countMax ${countMax}`);
+                    } else {
+                        count = 0;
+                        break;
+                    }
+                    if (countMax == 4 ) {
+                        isWin = true;
+                        winAudio.play();
+                        if(target==1) {
+                            statusBoard.innerHTML = 'Black Win!!!! Turn'
+                            statusBoard.style.fontWeight = 'bold'
+                            statusBoard.style.textShadow = '0.1rem 0.1rem 0.1rem black' 
+                        }
+                        if(target==2) {
+                            statusBoard.innerHTML = 'White Win!!!! Turn'
+                            statusBoard.style.fontWeight = 'bold'
+                            statusBoard.style.color = 'white'
+                            statusBoard.style.textShadow = '0.1rem 0.1rem 0.1rem black'
+                        }
+                        
+
+                    }
+                    
+                }
+
+                for (let k = 1; k < 19; k++) {
+                    if (checkBoard.some((element) => (element[0]==check[0])&&element[1]==check[1]+k)) {
+                        count += 1;
+                        countMax = Math.max(count,countMax)
+                    } else {
+                        count = 0;
+                        break;
+                    }
+                    if (countMax == 4 ) {
+                        isWin = true;
+                        winAudio.play();
+                        if(target==1) {
+                            statusBoard.innerHTML = 'Black Win!!!! Turn'
+                            statusBoard.style.fontWeight = 'bold'
+                            statusBoard.style.textShadow = '0.1rem 0.1rem 0.1rem black'
+                        }
+                        if(target==2) {
+                            statusBoard.innerHTML = 'White Win!!!! Turn'
+                            statusBoard.style.fontWeight = 'bold'
+                            statusBoard.style.color = 'white'
+                            statusBoard.style.textShadow = '0.1rem 0.1rem 0.1rem black'
+                        }
+                         
+
+                    } 
+                    
+                }
+
+                for (let k = 1; k < 19; k++) {
+                    if (checkBoard.some((element) => (element[0]==check[0] + k)&&element[1]==check[1]+k)) {
+                        count += 1;
+                        countMax = Math.max(count,countMax)
+                    } else {
+                        count = 0;
+                        break; 
+                    }
+                    if (countMax == 4 ) {
+                        isWin = true;
+                        winAudio.play();
+                        if(target==1) {
+                            statusBoard.innerHTML = 'Black Win!!!! Turn'
+                            statusBoard.style.fontWeight = 'bold'
+                            statusBoard.style.textShadow = '0.1rem 0.1rem 0.1rem black'
+                        }
+                        if(target==2) {
+                            statusBoard.innerHTML = 'White Win!!!! Turn'
+                            statusBoard.style.fontWeight = 'bold'
+                            statusBoard.style.color = 'white'
+                            statusBoard.style.textShadow = '0.1rem 0.1rem 0.1rem black'
+                        }
+                        
+
+                    }
+                    
+                }
+
+                for (let k = 1; k < 19; k++) {
+                    if (checkBoard.some((element) => (element[0]==check[0]-k)&&element[1]==check[1]+k)) {
+                        count += 1;
+                        countMax = Math.max(count,countMax)
+                        
+                    } else {
+                        count = 0;
+                        break; 
+                    }
+                    if (countMax == 4 ) {
+                        isWin = true;
+                        winAudio.play();
+                        if(target==1) {
+                            statusBoard.innerHTML = 'Black Win!!!! Turn'
+                            statusBoard.style.fontWeight = 'bold'
+                            statusBoard.style.textShadow = '0.1rem 0.1rem 0.1rem black'
+                        }
+                        if(target==2) {
+                            statusBoard.innerHTML = 'White Win!!!! Turn'
+                            statusBoard.style.fontWeight = 'bold'
+                            statusBoard.style.color = 'white'
+                            statusBoard.style.textShadow = '0.1rem 0.1rem 0.1rem black'
+                        }
+                        
+
+                    }
+                    
+                }
+                
+        
+                let case01 = checkBoard.some((element) => element[0]==check[0]+1);
+                 
+            } 
+
+            
         }
 
 
 
         let grids = document.querySelectorAll('ul');
-        console.log('hi')
         let turn = 1; 
         let state = []; 
 
@@ -129,31 +264,76 @@
             
         }
 
-        console.log(state)
-        console.log(state[0])
         for (let i = 0; i < grids.length; i++) {
             grids[i].addEventListener('click',function(){
-                if ((turn % 2 == 1) &&(state[i]==-1)) {
-                    grids[i].style.backgroundColor ='black';
-                    grids[i].style.borderRadius ='var(--subGridSize)';
-                    state[i] = 1;
-                    turn += 1;
+                if (isWin) {
                     
-                } else if (state[i]==-1) {
-                    grids[i].style.backgroundColor ='white';
-                    grids[i].style.borderRadius ='var(--subGridSize)';
-                    state[i] = 2;
-                    turn += 1;
-                }
+                } else {
+                    if ((turn % 2 == 1) &&(state[i]==-1)) {
+                        grids[i].style.backgroundColor ='black';
+                        grids[i].style.borderRadius ='var(--subGridSize)';
+                        state[i] = 1;
+                        check(state,19,1);
+                        check(state,19,2);
+                        if (isWin) {
+                            
+                        }else{
+                            colorTurn.innerHTML = 'White';
+                            colorTurn.style.color ='white';
+                            
+                            
+                            turn += 1;
+                            turnNum.innerHTML=turn;
+
+                        }
+                        
+                        
+                        
+                    } else if (state[i]==-1) {
+                        grids[i].style.backgroundColor ='white';
+                        grids[i].style.borderRadius ='var(--subGridSize)';
+                        state[i] = 2;
+                        check(state,19,1);
+                        check(state,19,2);
+                        if (isWin) {
+                            
+                        }else{
+                            colorTurn.innerHTML = 'Black';
+                            colorTurn.style.color ='black';
+                            
+                            turn += 1;
+                            turnNum.innerHTML=turn;
+                        }
+                    }
                 
-                
-                
-                console.log(turn);
                 check(state,19,1);
-            
+                check(state,19,2);
+                
+                
+            }
+                    
             });
 
         }
+
+        const retry = document.getElementById('retry');
+        retry.addEventListener('click',function(){
+            
+            for (let i = 0; i < grids.length; i++) {
+            state[i] = -1;
+            grids[i].style.backgroundColor = 'rgba(255, 0, 0, 0)';
+            };
+            statusBoard.innerHTML = 'Gomoku Turn'
+            statusBoard.style.fontWeight = '500'
+            statusBoard.style.color = 'black'
+            statusBoard.style.textShadow = '0rem 0rem 0rem black'
+            turn = 1;
+            turnNum.innerHTML=turn;
+            colorTurn.innerHTML = 'Black';
+            colorTurn.style.color ='black';
+            isWin = false;
+
+        })
    
     </script>
 
