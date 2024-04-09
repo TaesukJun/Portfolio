@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TJ projects</title>
+    <title>TJ projects - Gomoku</title>
     <link rel="icon" href="img/icon/cake-favicon-02.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/reset.css">    
     <link rel="stylesheet" href="../css/main.css">
@@ -132,10 +132,7 @@
                      
                     if (checkBoard.some((element) => (element[0]== check[0] + k)&&element[1]==check[1])) {
                         count += 1;
-                        console.log(checkBoard);
-                        console.log(`k-countMax ${k}`);
                         countMax = Math.max(count,countMax);
-                        console.log(`countMax ${countMax}`);
                     } else {
                         count = 0;
                         break;

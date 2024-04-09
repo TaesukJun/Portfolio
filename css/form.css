@@ -62,7 +62,7 @@ select {
     border-radius: 1rem;
 }
 
-button {
+.submit {
     background-color: var(--themeColor04);
     width: 8rem;
     height: 3rem;
@@ -71,12 +71,12 @@ button {
     transition: all ease-in-out 0.7s;
 }
 
-button:hover {
+.submit:hover {
     filter: brightness(125%);
     transition: all ease-in-out 0.7s;
 }
 
 
-input[type="text"], textarea, select, button{
+input[type="text"], textarea, select {
     padding: 0.5rem;
 }
