@@ -1,0 +1,64 @@
+.empty {
+    height: 24rem;
+
+}
+
+
+.movingBox {
+    height: 10rem;
+    width: 10rem;
+    background: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    transition: all 1s;
+    cursor: pointer;
+    margin-left: 5rem;
+    
+
+}
+
+.movingBox.active {
+    transform: translateX(10rem);
+    
+
+}
+
+.satelliteBox {
+    display: flex;
+    position: absolute;
+    background: var(--clr);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    z-index: 10;
+    transform: ;
+    opacity: 0;
+    transition: all 1s;
+    pointer-events: none; 
+    
+}
+
+/* translateX(calc(10rem * sin((2 / 4) * pi * var(--i)))) translateY(calc(10rem * cos((2 / 4) * pi * var(--i)))); */
+
+.movingBox.active .satelliteBox{
+    
+    transform-origin: -10rem;
+    transform: translateX(11rem) rotate(calc(var(--i) * 90deg));
+    
+    pointer-events: all; 
+    opacity: 1;
+    transition: all 1s;
+}
+
+
+
+.movingBox ::after{
+    transform: translateX(20rem);
+    padding: 30rem;
+    margin-left: 10rem;
+    transition: all 1s;
+
+}

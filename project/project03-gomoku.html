@@ -121,12 +121,14 @@
                 }
                 
             }
-            
+            let isSix = 0;
+            let isFive = 0;
             for (let i = 0; i < checkBoard.length; i++) {
                 let count = 0;
                 let countMax = 0;
                 let check = checkBoard[i];
                 
+
 
                 for (let k = 1; k < 19; k++) {
                      
@@ -137,7 +139,72 @@
                         count = 0;
                         break;
                     }
-                    if (countMax == 4 ) {
+                    if (countMax == 5) {
+                        isSix += 1;
+                    }
+                    if (countMax == 4) {
+                        isFive += 1;
+                    }
+                    
+                }
+                
+                    
+                
+
+                for (let k = 1; k < 19; k++) {
+                    if (checkBoard.some((element) => (element[0]==check[0])&&element[1]==check[1]+k)) {
+                        count += 1;
+                        countMax = Math.max(count,countMax)
+                    } else {
+                        count = 0;
+                        break;
+                    }
+                    if (countMax == 5) {
+                        isSix += 1;
+                    }
+                    if (countMax == 4) {
+                        isFive += 1;
+                    }
+                    
+                }
+
+                for (let k = 1; k < 19; k++) {
+                    if (checkBoard.some((element) => (element[0]==check[0] + k)&&element[1]==check[1]+k)) {
+                        count += 1;
+                        countMax = Math.max(count,countMax)
+                    } else {
+                        count = 0;
+                        break; 
+                    }
+                    if (countMax == 5) {
+                        isSix += 1;
+                    }
+                    if (countMax == 4) {
+                        isFive += 1;
+                    }
+                    
+                }
+
+                for (let k = 1; k < 19; k++) {
+                    if (checkBoard.some((element) => (element[0]==check[0]-k)&&element[1]==check[1]+k)) {
+                        count += 1;
+                        countMax = Math.max(count,countMax)
+                        
+                    } else {
+                        count = 0;
+                        break; 
+                    }
+                    if (countMax == 5) {
+                        isSix += 1;
+                    }
+                    if (countMax == 4) {
+                        isFive += 1;
+                    }
+                    
+                }
+                
+                if (isSix != 0) {
+                    if (isFive > isSix +1) {
                         isWin = true;
                         winAudio.play();
                         if(target==1) {
@@ -152,54 +219,18 @@
                             statusBoard.style.textShadow = '0.1rem 0.1rem 0.1rem black'
                         }
                         
-
                     }
                     
-                }
+                    
 
-                for (let k = 1; k < 19; k++) {
-                    if (checkBoard.some((element) => (element[0]==check[0])&&element[1]==check[1]+k)) {
-                        count += 1;
-                        countMax = Math.max(count,countMax)
-                    } else {
-                        count = 0;
-                        break;
-                    }
-                    if (countMax == 4 ) {
+                } else{
+                    if (isFive == 1) {
                         isWin = true;
                         winAudio.play();
                         if(target==1) {
                             statusBoard.innerHTML = 'Black Win!!!! Turn'
                             statusBoard.style.fontWeight = 'bold'
-                            statusBoard.style.textShadow = '0.1rem 0.1rem 0.1rem black'
-                        }
-                        if(target==2) {
-                            statusBoard.innerHTML = 'White Win!!!! Turn'
-                            statusBoard.style.fontWeight = 'bold'
-                            statusBoard.style.color = 'white'
-                            statusBoard.style.textShadow = '0.1rem 0.1rem 0.1rem black'
-                        }
-                         
-
-                    } 
-                    
-                }
-
-                for (let k = 1; k < 19; k++) {
-                    if (checkBoard.some((element) => (element[0]==check[0] + k)&&element[1]==check[1]+k)) {
-                        count += 1;
-                        countMax = Math.max(count,countMax)
-                    } else {
-                        count = 0;
-                        break; 
-                    }
-                    if (countMax == 4 ) {
-                        isWin = true;
-                        winAudio.play();
-                        if(target==1) {
-                            statusBoard.innerHTML = 'Black Win!!!! Turn'
-                            statusBoard.style.fontWeight = 'bold'
-                            statusBoard.style.textShadow = '0.1rem 0.1rem 0.1rem black'
+                            statusBoard.style.textShadow = '0.1rem 0.1rem 0.1rem black' 
                         }
                         if(target==2) {
                             statusBoard.innerHTML = 'White Win!!!! Turn'
@@ -208,40 +239,11 @@
                             statusBoard.style.textShadow = '0.1rem 0.1rem 0.1rem black'
                         }
                         
-
                     }
-                    
                 }
 
-                for (let k = 1; k < 19; k++) {
-                    if (checkBoard.some((element) => (element[0]==check[0]-k)&&element[1]==check[1]+k)) {
-                        count += 1;
-                        countMax = Math.max(count,countMax)
-                        
-                    } else {
-                        count = 0;
-                        break; 
-                    }
-                    if (countMax == 4 ) {
-                        isWin = true;
-                        winAudio.play();
-                        if(target==1) {
-                            statusBoard.innerHTML = 'Black Win!!!! Turn'
-                            statusBoard.style.fontWeight = 'bold'
-                            statusBoard.style.textShadow = '0.1rem 0.1rem 0.1rem black'
-                        }
-                        if(target==2) {
-                            statusBoard.innerHTML = 'White Win!!!! Turn'
-                            statusBoard.style.fontWeight = 'bold'
-                            statusBoard.style.color = 'white'
-                            statusBoard.style.textShadow = '0.1rem 0.1rem 0.1rem black'
-                        }
-                        
 
-                    }
-                    
-                }
-                
+
         
                 let case01 = checkBoard.some((element) => element[0]==check[0]+1);
                  
